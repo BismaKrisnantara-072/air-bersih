@@ -323,3 +323,226 @@ footer p {
         padding: 55px 22px;
     }
 }
+
+/* =====================================
+   HALAMAN EDUKASI AIR BERSIH
+===================================== */
+
+
+/* PENGATURAN DASAR */
+.halaman-edukasi {
+    font-family: Poppins, sans-serif;
+    color: #173E56;
+    background-color: #F3F9FE;
+}
+
+.halaman-edukasi img {
+    display: block;
+    width: 100%;
+}
+
+/* HERO SECTION */
+.edukasi-hero {
+    min-height: 550px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 40, 60, 0.55),
+                        rgba(0, 40, 60, 0.55)),
+        url("../image/background edukasi.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.edukasi-hero-content {
+    max-width: 700px;
+}
+
+.edukasi-label {
+    font-weight: bold;
+}
+
+.edukasi-hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.edukasi-hero h1 span {
+    color: #27B6E8;
+}
+
+.edukasi-deskripsi {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.edukasi-tombol {
+    display: inline-block;
+    background-color: #079BD0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* JUDUL SETIAP BAGIAN */
+.edukasi-judul {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.edukasi-judul h2 {
+    font-size: 32px;
+    color: #173E56;
+}
+
+.edukasi-judul p {
+    color: #66859B;
+}
+
+/* BAGIAN PENGERTIAN */
+.edukasi-pengertian {
+    padding: 80px 8%;
+}
+
+.edukasi-pengertian-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.edukasi-gambar-pengertian {
+    width: 50% !important;
+    border-radius: 15px;
+}
+
+.edukasi-teks-pengertian {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* BAGIAN EDUKASI DAN CARD */
+.edukasi-bagian {
+    padding: 80px 8%;
+}
+
+.edukasi-sumber {
+    background-color: #EAF5FC;
+}
+
+.edukasi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.edukasi-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.edukasi-card-gambar {
+    height: 180px;
+    object-fit: cover;
+}
+
+.edukasi-card-isi {
+    padding: 20px;
+}
+
+.edukasi-card-isi h3 {
+    color: #079BD0;
+    font-size: 18px;
+}
+
+.edukasi-card-isi p {
+    color: #66859B;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* CATATAN SUMBER AIR */
+.edukasi-catatan {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #079BD0;
+}
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+    .halaman-edukasi {
+        font-size: 14px;
+    }
+
+    .edukasi-hero {
+        min-height: 400px;
+        padding: 50px 6%;
+    }
+
+    .edukasi-hero h1 {
+        font-size: 38px;
+    }
+
+    .edukasi-pengertian,
+    .edukasi-bagian {
+        padding: 45px 6%;
+    }
+
+    .edukasi-pengertian-content {
+        flex-direction: column;
+    }
+
+    .edukasi-gambar-pengertian {
+        width: 100% !important;
+    }
+
+    .edukasi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 480px) {
+    .edukasi-hero {
+        min-height: 350px;
+        padding: 35px 5%;
+    }
+
+    .edukasi-hero h1 {
+        font-size: 30px;
+    }
+
+    .edukasi-deskripsi {
+        font-size: 14px;
+    }
+
+    .edukasi-pengertian,
+    .edukasi-bagian {
+        padding: 35px 5%;
+    }
+
+    .edukasi-judul h2 {
+        font-size: 25px;
+    }
+
+    .edukasi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edukasi-card-gambar {
+        height: 200px;
+    }
+
+    .edukasi-card-isi {
+        padding: 15px;
+    }
+}
