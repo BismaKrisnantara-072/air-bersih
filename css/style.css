@@ -873,3 +873,80 @@ footer p {
 .tips-tombol:hover {
     background-color: #087EAA;
 }
+
+/* BAGIAN DAFTAR TIPS */
+.tips-bagian {
+    padding: 65px 6%;
+}
+
+.tips-judul {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tips-judul h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tips-judul p {
+    color: #66859B;
+    font-size: 14px;
+}
+
+/* GRID CARD */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD TIPS */
+.tips-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(23, 62, 86, 0.08);
+}
+
+.tips-gambar {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tips-card-isi {
+    padding: 20px;
+}
+
+.tips-card-isi h3 {
+    font-size: 17px;
+    margin: 10px 0;
+    color: #079BD0;
+}
+
+.tips-card-isi p {
+    color: #66859B;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* BAGIAN AJAKAN */
+.tips-ajakan {
+    margin: 20px 6% 65px;
+    padding: 40px 25px;
+    text-align: center;
+    background-color: #E3F4FD;
+    border-radius: 25px;
+}
+
+.tips-ajakan h2 {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.tips-ajakan p {
+    color: #66859B;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
