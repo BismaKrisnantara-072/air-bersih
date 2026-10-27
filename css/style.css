@@ -950,3 +950,68 @@ footer p {
     line-height: 1;
     margin-bottom: 15px;
 }
+
+/* RESPONSIVE TABLET DAN HP */
+@media (max-width: 768px) {
+    .tips-hero {
+        min-height: 380px;
+        padding: 50px 6%;
+    }
+
+    .tips-hero h1 {
+        font-size: 36px;
+    }
+
+    .tips-bagian {
+        padding: 45px 5%;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .tips-gambar {
+        height: 180px;
+    }
+}
+
+/* RESPONSIVE HP KECIL */
+@media (max-width: 480px) {
+    .tips-hero {
+        min-height: 350px;
+        padding: 35px 5%;
+    }
+
+    .tips-hero h1 {
+        font-size: 30px;
+    }
+
+    .tips-deskripsi {
+        font-size: 14px;
+    }
+
+    .tips-judul h2 {
+        font-size: 25px;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-gambar {
+        height: 210px;
+    }
+
+    .tips-card-isi {
+        padding: 18px;
+    }
+
+    .tips-ajakan {
+        padding: 30px 20px;
+    }
+
+    .tips-ajakan h2 {
+        font-size: 22px;
+    }
+}
