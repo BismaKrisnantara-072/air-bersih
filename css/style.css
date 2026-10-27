@@ -374,67 +374,60 @@ nav {
    PENGATURAN RESPONSIF KHUSUS HP (MOBILE)
 ===================================== */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        padding: 14px 20px;
+        min-height: auto;
+    }
 
-  /* 1. Header & Navigasi */
-  nav {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-    padding: 14px 20px;
-    min-height: auto;
-  }
+    .menu {
+        justify-content: center;
+        gap: 12px;
+    }
 
-  .menu {
-    justify-content: center;
-    gap: 12px;
-  }
+    .hero {
+        min-height: 480px;
+        padding: 50px 6%;
+        text-align: left;
+    }
 
-  /* 2. Hero Section */
-  .hero {
-    min-height: 480px;
-    padding: 50px 6%;
-    text-align: left;
-  }
+    .hero h1 {
+        font-size: 32px;
+    }
 
-  .hero h1 {
-    font-size: 32px;
-  }
+    .kumpulan-kartu {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 
-  /* 3. Empat Kartu Foto (Berderet ke Bawah) */
-  .kumpulan-kartu {
-    grid-template-columns: 1fr; /* Berubah jadi 1 kolom ke bawah */
-    gap: 16px;
-  }
+    .kartu img {
+        height: 190px;
+    }
 
-  .kartu img {
-    height: 190px;
-  }
+    .ajakan-edukasi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 16px;
+    }
 
-  /* 4. Banner Generasi Mendatang */
-  .ajakan-edukasi {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 24px 20px;
-    gap: 16px;
-  }
+    .ajakan-gambar {
+        flex: unset;
+    }
 
-  .ajakan-gambar {
-    flex: unset;
-  }
+    .ajakan-gambar img {
+        width: 140px;
+        height: 120px;
+    }
 
-  .ajakan-gambar img {
-    width: 140px;
-    height: 120px;
-  }
-
-  .tombol-ajakan {
-    width: 100%;
-  }
+    .tombol-ajakan {
+        width: 100%;
+    }
 }
-
-
 /* =====================================
    PERBAIKAN HALAMAN ARTIKEL
 ===================================== */
