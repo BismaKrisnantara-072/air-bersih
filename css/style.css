@@ -630,6 +630,32 @@ body.artikel-halaman {
 }
 
 /* =========================================
+   RESET DAN PENGATURAN DASAR
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body.tentang-halaman {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--biru-tua);
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.tentang-halaman img {
+    max-width: 100%;
+}
+
+/* =========================================
    NAVIGASI
 ========================================= */
 
@@ -1149,7 +1175,6 @@ body.artikel-halaman {
         padding: 34px 22px;
     }
 }
-
 
 /* =====================================
    6. EDUKASI - PENGATURAN DASAR
