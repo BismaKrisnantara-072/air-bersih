@@ -388,3 +388,40 @@ footer p {
     border-radius: 30px;
     text-decoration: none;
 }
+
+/* JUDUL SETIAP BAGIAN */
+.edukasi-judul {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.edukasi-judul h2 {
+    font-size: 32px;
+    color: #173E56;
+}
+
+.edukasi-judul p {
+    color: #66859B;
+}
+
+/* BAGIAN PENGERTIAN */
+.edukasi-pengertian {
+    padding: 80px 8%;
+}
+
+.edukasi-pengertian-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.edukasi-gambar-pengertian {
+    width: 50% !important;
+    border-radius: 15px;
+}
+
+.edukasi-teks-pengertian {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 2;
+}
