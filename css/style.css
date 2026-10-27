@@ -971,7 +971,7 @@ body.tentang-halaman {
 ===================================== */
 
 .edukasi-hero {
-    min-height: 640px;
+    min-height: 636px;
     padding: 80px 8%;
 
     display: flex;
@@ -1505,7 +1505,7 @@ footer p {
 
 /* HERO SECTION */
 .tips-hero {
-    min-height: 640px;
+    min-height: 636px;
     padding: 80px 8%;
     display: flex;
     align-items: center;
