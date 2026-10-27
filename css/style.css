@@ -466,3 +466,81 @@ footer p {
     font-size: 14px;
     line-height: 2;
 }
+
+/* CATATAN SUMBER AIR */
+.edukasi-catatan {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+    .halaman-edukasi {
+        font-size: 14px;
+    }
+
+    .edukasi-hero {
+        min-height: 400px;
+        padding: 50px 6%;
+    }
+
+    .edukasi-hero h1 {
+        font-size: 38px;
+    }
+
+    .edukasi-pengertian,
+    .edukasi-bagian {
+        padding: 45px 6%;
+    }
+
+    .edukasi-pengertian-content {
+        flex-direction: column;
+    }
+
+    .edukasi-gambar-pengertian {
+        width: 100% !important;
+    }
+
+    .edukasi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 480px) {
+    .edukasi-hero {
+        min-height: 350px;
+        padding: 35px 5%;
+    }
+
+    .edukasi-hero h1 {
+        font-size: 30px;
+    }
+
+    .edukasi-deskripsi {
+        font-size: 14px;
+    }
+
+    .edukasi-pengertian,
+    .edukasi-bagian {
+        padding: 35px 5%;
+    }
+
+    .edukasi-judul h2 {
+        font-size: 25px;
+    }
+
+    .edukasi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edukasi-card-gambar {
+        height: 200px;
+    }
+
+    .edukasi-card-isi {
+        padding: 15px;
+    }
+}
