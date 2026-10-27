@@ -425,3 +425,44 @@ footer p {
     font-size: 15px;
     line-height: 2;
 }
+
+/* BAGIAN EDUKASI DAN CARD */
+.edukasi-bagian {
+    padding: 80px 8%;
+}
+
+.edukasi-sumber {
+    background-color: #EAF5FC;
+}
+
+.edukasi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.edukasi-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.edukasi-card-gambar {
+    height: 180px;
+    object-fit: cover;
+}
+
+.edukasi-card-isi {
+    padding: 20px;
+}
+
+.edukasi-card-isi h3 {
+    color: #079BD0;
+    font-size: 18px;
+}
+
+.edukasi-card-isi p {
+    color: #66859B;
+    font-size: 14px;
+    line-height: 2;
+}
