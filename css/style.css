@@ -179,87 +179,250 @@ nav {
 }
 
 
-/* =====================================
-   5. BERANDA - BAGIAN MANFAAT AIR BERSIH
-===================================== */
+/* BAGIAN MULAI DARI LANGKAH KECIL */
 
 .manfaat {
-    padding: 80px 8%;
-    background-color: #F3F9FE;
-}
-
-/* Judul bagian manfaat */
-.manfaat h2 {
-    margin-bottom: 14px;
-    color: #173E56;
-    font-size: 32px;
-    line-height: 1.3;
+    padding: 60px 4%;
+    background-color: #f1f8fc;
     text-align: center;
 }
 
-/* Paragraf pengantar manfaat */
-.manfaat .deskripsi {
-    max-width: 750px;
-    margin: 0 auto 40px;
-    color: #66859B;
+.manfaat .subjudul {
+    color: #0799cc;
     font-size: 15px;
-    line-height: 1.8;
-    text-align: center;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-/* Susunan kartu manfaat */
+.manfaat > h2 {
+    color: #153b5b;
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.manfaat > .deskripsi {
+    color: #71869b;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
 .kumpulan-kartu {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 22px;
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-/* Tampilan setiap kartu */
 .kartu {
-    min-width: 0;
-    padding: 25px 21px;
-    background-color: #FFFFFF;
-    border: 1px solid #E6F0F6;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px rgba(23, 62, 86, 0.06);
-
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease;
+    background-color: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(35, 76, 105, 0.08);
+    transition: transform 0.3s ease;
 }
 
 .kartu:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 26px rgba(23, 62, 86, 0.12);
 }
 
-/* Ikon atau emoji pada kartu */
-.ikon {
-    width: 54px;
-    height: 54px;
-    margin-bottom: 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-    background-color: #E3F5FC;
-    font-size: 26px;
+.kartu img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
-/* Judul kartu manfaat */
+.kartu-isi {
+    padding: 25px 28px 28px;
+}
+
 .kartu h3 {
-    margin-bottom: 10px;
-    color: #173E56;
-    font-size: 17px;
+    color: #0799cc;
+    font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 16px;
 }
 
-/* Deskripsi kartu manfaat */
 .kartu p {
-    color: #66859B;
-    font-size: 14px;
+    color: #71869b;
+    font-size: 16px;
     line-height: 1.8;
+}
+
+/* TAMPILAN TABLET */
+
+@media (max-width: 1000px) {
+    .kumpulan-kartu {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .kartu img {
+        height: 220px;
+    }
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 600px) {
+    .manfaat {
+        padding: 40px 5%;
+    }
+
+    .manfaat > h2 {
+        font-size: 24px;
+    }
+
+    .manfaat > .deskripsi {
+        font-size: 14px;
+    }
+
+    .kumpulan-kartu {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .kartu img {
+        height: 220px;
+    }
+
+    .kartu-isi {
+        padding: 20px;
+    }
+
+    .kartu h3 {
+        font-size: 18px;
+    }
+
+    .kartu p {
+        font-size: 14px;
+    }
+}/* BAGIAN MULAI DARI LANGKAH KECIL */
+
+.manfaat {
+    padding: 60px 4%;
+    background-color: #f1f8fc;
+    text-align: center;
+}
+
+.manfaat .subjudul {
+    color: #0799cc;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.manfaat > h2 {
+    color: #153b5b;
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.manfaat > .deskripsi {
+    color: #71869b;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.kartu {
+    background-color: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(35, 76, 105, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+}
+
+.kartu img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.kartu-isi {
+    padding: 25px 28px 28px;
+}
+
+.kartu h3 {
+    color: #0799cc;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.kartu p {
+    color: #71869b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* TAMPILAN TABLET */
+
+@media (max-width: 1000px) {
+    .kumpulan-kartu {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .kartu img {
+        height: 220px;
+    }
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 600px) {
+    .manfaat {
+        padding: 40px 5%;
+    }
+
+    .manfaat > h2 {
+        font-size: 24px;
+    }
+
+    .manfaat > .deskripsi {
+        font-size: 14px;
+    }
+
+    .kumpulan-kartu {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .kartu img {
+        height: 220px;
+    }
+
+    .kartu-isi {
+        padding: 20px;
+    }
+
+    .kartu h3 {
+        font-size: 18px;
+    }
+
+    .kartu p {
+        font-size: 14px;
+    }
 }
 
 
