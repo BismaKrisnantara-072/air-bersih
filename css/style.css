@@ -575,410 +575,69 @@ nav {
     background: #05616b;
 }
 
-/* =====================================
-   HALAMAN TENTANG AIR BERSIH
-===================================== */
-
-.tentang-halaman {
-    color: #173E56;
-    background-color: #F3F9FE;
-}
-
-/* HERO TENTANG */
+/* Perbaikan halaman Tentang */
 .tentang-hero {
-    min-height: 470px;
-    padding: 75px 8%;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    background:
-        linear-gradient(90deg, rgba(4, 45, 62, 0.78), rgba(4, 45, 62, 0.42)),
-        url("../image/river.jpg");
-    background-size: cover;
-    background-position: center;
+    padding: 80px 8%;
+    background-color: #f3f9fe;
 }
 
-.tentang-hero-isi {
-    max-width: 760px;
-}
-
-.tentang-label {
-    margin-bottom: 14px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
+.tentang-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .tentang-hero h1 {
-    margin-bottom: 18px;
-    font-size: clamp(36px, 5vw, 54px);
+    font-size: clamp(32px, 4vw, 48px);
     line-height: 1.2;
+    margin: 20px 0;
+    color: #173e56;
 }
 
-.tentang-hero h1 span {
-    color: #27B6E8;
+.tentang-hero p {
+    max-width: 750px;
+    line-height: 1.8;
+    margin-bottom: 24px;
 }
 
-.tentang-hero-isi > p:not(.tentang-label) {
-    max-width: 650px;
-    margin-bottom: 25px;
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-.tentang-tombol {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 30px;
-    background-color: #079BD0;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.25s ease, transform 0.25s ease;
-}
-
-.tentang-tombol:hover {
-    background-color: #057EAA;
-    transform: translateY(-2px);
-}
-
-/* PENGENALAN WEBSITE */
-.tentang-pengenalan {
-    padding: 75px 8%;
-    display: flex;
-    align-items: center;
-    gap: 45px;
-    background-color: #FFFFFF;
-}
-
-.tentang-gambar,
-.tentang-teks {
-    flex: 1 1 50%;
-    min-width: 0;
-}
-
-.tentang-gambar img {
+.tentang-hero img {
     display: block;
     width: 100%;
-    min-height: 300px;
-    max-height: 420px;
+    max-width: 600px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(23, 62, 86, 0.10);
+    border-radius: 16px;
+    margin-top: 32px;
 }
 
-.tentang-subjudul {
-    margin-bottom: 8px;
-    color: #078BC5;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.7px;
-}
-
-.tentang-teks h2,
-.tentang-sdg h2 {
-    margin-bottom: 16px;
-    color: #153B5B;
-    font-size: clamp(25px, 3vw, 32px);
-    line-height: 1.35;
-}
-
-.tentang-teks p:not(.tentang-subjudul),
-.tentang-sdg-isi > p:not(.tentang-subjudul) {
-    margin-bottom: 14px;
-    color: #526F82;
-    font-size: 14px;
-    line-height: 1.9;
-}
-
-/* TUJUAN DAN MISI */
-.tentang-tujuan {
-    padding: 70px 6%;
-    background: linear-gradient(180deg, #F3FAFF 0%, #EAF7FF 100%);
-}
-
-.tentang-judul {
-    max-width: 700px;
-    margin: 0 auto 35px;
-    text-align: center;
-}
-
-.tentang-judul h2 {
-    margin-bottom: 10px;
-    color: #153B5B;
-    font-size: clamp(26px, 3vw, 32px);
-    line-height: 1.4;
-}
-
-.tentang-judul > p:last-child {
-    color: #718BA5;
-    font-size: 14px;
-}
-
-.tentang-grid {
-    width: 100%;
+/* Isi halaman */
+.tentang-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    padding: 60px 8%;
 }
 
-.tentang-card {
-    padding: 28px 24px;
-    background-color: #FFFFFF;
-    border: 1px solid #E6F0F6;
-    border-radius: 18px;
-    box-shadow: 0 5px 18px rgba(23, 62, 86, 0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+.tentang-content h2 {
+    margin-bottom: 20px;
+    color: #173e56;
 }
 
-.tentang-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 25px rgba(23, 62, 86, 0.11);
-}
-
-.tentang-nomor {
-    margin-bottom: 15px;
-    color: #079BD0;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.tentang-card h3 {
-    margin-bottom: 10px;
-    color: #078BC5;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.tentang-card p {
-    color: #66859B;
-    font-size: 14px;
+.tentang-content p {
     line-height: 1.8;
+    margin-bottom: 16px;
 }
 
-/* KETERKAITAN DENGAN SDG 6 */
-.tentang-sdg {
-    padding: 65px 8%;
-    background-color: #FFFFFF;
-}
-
-.tentang-sdg-isi {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 38px 40px;
-    background: linear-gradient(110deg, #E0F4FF, #D2EFFF);
-    border-radius: 18px;
-}
-
-.tentang-sdg .tentang-tombol {
-    margin-top: 5px;
-}
-
-/* AJAKAN */
-.tentang-ajakan {
-    padding: 55px 6%;
-    text-align: center;
-    background-color: #F3F9FE;
-}
-
-.tentang-ajakan h2 {
-    margin-bottom: 12px;
-    color: #153B5B;
-    font-size: clamp(24px, 3vw, 30px);
-    line-height: 1.4;
-}
-
-.tentang-ajakan p {
-    max-width: 700px;
-    margin: 0 auto 22px;
-    color: #66859B;
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-/* RESPONSIVE TABLET */
-@media (max-width: 950px) {
-    .tentang-hero {
-        min-height: 430px;
-        padding: 60px 6%;
-    }
-
-    .tentang-pengenalan {
-        padding: 60px 6%;
-        gap: 28px;
-    }
-
-    .tentang-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .tentang-card:last-child {
-        grid-column: 1 / -1;
-    }
-
-    .tentang-sdg {
-        padding: 55px 6%;
-    }
-}
-
-/* RESPONSIVE HP */
+/* Tampilan HP */
 @media (max-width: 650px) {
     .tentang-hero {
-        min-height: 390px;
-        padding: 42px 5%;
+        padding: 48px 6%;
     }
 
-    .tentang-label {
-        font-size: 11px;
-        line-height: 1.7;
+    .tentang-hero img {
+        height: 240px;
     }
 
-    .tentang-hero h1 {
-        font-size: 34px;
-    }
-
-    .tentang-hero-isi > p:not(.tentang-label) {
-        font-size: 14px;
-    }
-
-    .tentang-pengenalan {
-        padding: 45px 5%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 25px;
-    }
-
-    .tentang-gambar img {
-        min-height: 0;
-        height: 230px;
-    }
-
-    .tentang-tujuan {
-        padding: 45px 5%;
-    }
-
-    .tentang-judul {
-        margin-bottom: 25px;
-    }
-
-    .tentang-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .tentang-card:last-child {
-        grid-column: auto;
-    }
-
-    .tentang-card {
-        padding: 23px 20px;
-    }
-
-    .tentang-sdg {
-        padding: 40px 5%;
-    }
-
-    .tentang-sdg-isi {
-        padding: 27px 22px;
-    }
-
-    .tentang-ajakan {
-        padding: 42px 5%;
-    }
-}
-
-/* HP KECIL */
-@media (max-width: 380px) {
-    .tentang-hero h1 {
-        font-size: 30px;
-    }
-
-    .tentang-tombol {
-        padding: 11px 19px;
-        font-size: 13px;
-    }
-
-    .tentang-gambar img {
-        height: 190px;
-    }
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-    .artikel-unggulan {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        padding: 18px;
-    }
-
-    .artikel-unggulan-gambar img {
-        height: 300px;
-    }
-
-    .artikel-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .artikel-card:last-child {
-        grid-column: 1 / -1;
-    }
-}
-
-/* Smartphone */
-@media (max-width: 600px) {
-    .halaman-artikel {
-        padding-top: 15px;
-    }
-
-    .artikel-intro {
-        margin: 25px auto 35px;
-    }
-
-    .artikel-intro h1 {
-        letter-spacing: -0.8px;
-    }
-
-    .artikel-unggulan {
-        grid-template-columns: 1fr;
-        padding: 14px;
-        margin-bottom: 50px;
-    }
-
-    .artikel-unggulan-gambar img {
-        height: 230px;
-    }
-
-    .artikel-unggulan-isi {
-        padding: 12px 5px 8px;
-    }
-
-    .artikel-section-heading {
-        display: block;
-    }
-
-    .artikel-section-heading > p {
-        margin-top: 12px;
-    }
-
-    .artikel-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .artikel-card:last-child {
-        grid-column: auto;
-    }
-
-    .artikel-card > img {
-        height: 220px;
-    }
-
-    .artikel-ajakan {
-        margin-top: 50px;
-        padding: 35px 20px;
+    .tentang-content {
+        padding: 40px 6%;
     }
 }
 
