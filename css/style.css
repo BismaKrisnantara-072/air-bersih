@@ -11,7 +11,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -370,7 +370,69 @@ nav {
     background-color: #1178ae;
 }
 
+/* =====================================
+   PENGATURAN RESPONSIF KHUSUS HP (MOBILE)
+===================================== */
+@media (max-width: 768px) {
 
+  /* 1. Header & Navigasi */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 14px 20px;
+    min-height: auto;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* 2. Hero Section */
+  .hero {
+    min-height: 480px;
+    padding: 50px 6%;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  /* 3. Empat Kartu Foto (Berderet ke Bawah) */
+  .kumpulan-kartu {
+    grid-template-columns: 1fr; /* Berubah jadi 1 kolom ke bawah */
+    gap: 16px;
+  }
+
+  .kartu img {
+    height: 190px;
+  }
+
+  /* 4. Banner Generasi Mendatang */
+  .ajakan-edukasi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .ajakan-gambar {
+    flex: unset;
+  }
+
+  .ajakan-gambar img {
+    width: 140px;
+    height: 120px;
+  }
+
+  .tombol-ajakan {
+    width: 100%;
+  }
+}
 
 
 /* =====================================
