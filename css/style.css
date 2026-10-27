@@ -370,6 +370,288 @@ nav {
     background-color: #1178ae;
 }
 
+
+/* ==========================
+   HALAMAN ARTIKEL
+========================== */
+
+.halaman-artikel {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/* Pengantar artikel */
+.artikel-intro {
+    max-width: 760px;
+    margin: 30px auto 55px;
+    text-align: center;
+}
+
+.artikel-label {
+    color: #16818a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.artikel-intro h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+}
+
+.artikel-intro > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #52666b;
+}
+
+/* Artikel unggulan */
+.artikel-unggulan {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 75px;
+    padding: 25px;
+    background: #f0f8f8;
+    border-radius: 18px;
+}
+
+.artikel-unggulan-gambar img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.artikel-unggulan-isi {
+    padding: 15px;
+}
+
+.artikel-kategori {
+    display: inline-block;
+    color: #16818a;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-bottom: 12px;
+}
+
+.artikel-unggulan-isi h2 {
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.artikel-unggulan-isi p {
+    color: #52666b;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+/* Tautan artikel */
+.artikel-link {
+    display: inline-block;
+    color: #087f8c;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.7;
+    transition: color 0.2s ease;
+}
+
+.artikel-link:hover {
+    color: #045962;
+    text-decoration: underline;
+}
+
+/* Judul daftar artikel */
+.artikel-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.artikel-section-heading h2 {
+    font-size: clamp(26px, 3vw, 36px);
+    letter-spacing: -0.7px;
+}
+
+.artikel-section-heading > p {
+    max-width: 380px;
+    color: #52666b;
+    line-height: 1.7;
+}
+
+/* Grid kartu artikel */
+.artikel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.artikel-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e1ebeb;
+    border-radius: 14px;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.artikel-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(20, 75, 80, 0.09);
+}
+
+.artikel-card > img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.artikel-card-isi {
+    padding: 23px;
+}
+
+.artikel-card h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.artikel-card p {
+    color: #52666b;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* Bagian ajakan */
+.artikel-ajakan {
+    margin-top: 75px;
+    padding: 45px 25px;
+    text-align: center;
+    background: #eaf6f6;
+    border-radius: 18px;
+}
+
+.artikel-ajakan h2 {
+    max-width: 650px;
+    margin: 0 auto 15px;
+    font-size: clamp(26px, 4vw, 36px);
+    line-height: 1.3;
+}
+
+.artikel-ajakan > p:not(.artikel-label) {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #52666b;
+    line-height: 1.8;
+}
+
+.artikel-tombol {
+    display: inline-block;
+    padding: 13px 22px;
+    color: #ffffff;
+    background: #087f8c;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.artikel-tombol:hover {
+    background: #05616b;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .artikel-unggulan {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .artikel-unggulan-gambar img {
+        height: 300px;
+    }
+
+    .artikel-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .artikel-card:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    .halaman-artikel {
+        padding-top: 15px;
+    }
+
+    .artikel-intro {
+        margin: 25px auto 35px;
+    }
+
+    .artikel-intro h1 {
+        letter-spacing: -0.8px;
+    }
+
+    .artikel-unggulan {
+        grid-template-columns: 1fr;
+        padding: 14px;
+        margin-bottom: 50px;
+    }
+
+    .artikel-unggulan-gambar img {
+        height: 230px;
+    }
+
+    .artikel-unggulan-isi {
+        padding: 12px 5px 8px;
+    }
+
+    .artikel-section-heading {
+        display: block;
+    }
+
+    .artikel-section-heading > p {
+        margin-top: 12px;
+    }
+
+    .artikel-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .artikel-card:last-child {
+        grid-column: auto;
+    }
+
+    .artikel-card > img {
+        height: 220px;
+    }
+
+    .artikel-ajakan {
+        margin-top: 50px;
+        padding: 35px 20px;
+    }
+}
+
+
 /* ===== FOOTER ===== */
 
 footer {
