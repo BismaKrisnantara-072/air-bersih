@@ -798,3 +798,78 @@ footer p {
         height: 180px;
     }
 }
+
+/* =====================================
+   HALAMAN TIPS & PANDUAN AIR BERSIH
+===================================== */
+
+
+/* PENGATURAN DASAR */
+.tips-halaman {
+    font-family: 'Poppins', sans-serif;
+    color: #173E56;
+    background-color: #F3F9FE;
+}
+
+.tips-halaman img {
+    display: block;
+    width: 100%;
+}
+
+/* HERO SECTION */
+.tips-hero {
+    min-height: 600px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 40, 60, 0.55),
+                        rgba(0, 40, 60, 0.55)),
+        url("../image/jaga air bersih.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.tips-hero-isi {
+    max-width: 650px;
+}
+
+.tips-label {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e2f7ff;
+}
+
+.tips-hero h1 {
+    font-size: 46px;
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+.tips-hero h1 span {
+    color: #5CCBFA;
+}
+
+.tips-deskripsi {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* TOMBOL */
+.tips-tombol {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #079BD0;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.tips-tombol:hover {
+    background-color: #087EAA;
+}
