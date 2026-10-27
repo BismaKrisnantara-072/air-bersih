@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artikel | Air Bersih</title>
+    <meta name="description" content="Artikel edukasi tentang air bersih, pencemaran air, konservasi, dan sanitasi layak.">
+    <title>Artikel | Air Bersih untuk Semua</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <nav>
             <a class="logo" href="index.html">Air Bersih</a>
@@ -15,99 +16,163 @@
                 <a href="index.html">Beranda</a>
                 <a href="edukasi.html">Edukasi</a>
                 <a href="panduan.html">Tips & Panduan</a>
-                <a href="artikel.html">Artikel</a>
+                <a href="artikel.html" aria-current="page">Artikel</a>
                 <a href="tentang.html">Tentang</a>
             </div>
         </nav>
     </header>
 
-    <main class="konten">
-        <section class="artikel-header">
-            <h1>Artikel Seputar Air Bersih</h1>
+    <main class="konten halaman-artikel">
+
+        <!-- Pengantar halaman -->
+        <section class="artikel-intro">
+            <p class="artikel-label">SDG 6 — AIR BERSIH DAN SANITASI LAYAK</p>
+
+            <h1>Stories for a Better Water Future.</h1>
+
             <p>
-                Temukan berbagai informasi menarik tentang pentingnya air bersih,
-                dampak pencemaran air bagi kesehatan, cara menjaga kualitas air,
-                serta upaya melestarikan sumber air di lingkungan sekitar.
+                Kenali lebih jauh pentingnya air bersih melalui artikel
+                edukatif tentang lingkungan, kebiasaan sehari-hari,
+                dan upaya menjaga ketersediaan air untuk semua.
             </p>
         </section>
 
-        <section class="daftar-artikel">
-            <article class="kartu-artikel">
+        <!-- Artikel utama -->
+        <section class="artikel-unggulan">
+            <div class="artikel-unggulan-gambar">
                 <img
                     src="images/air-bersih.jpg"
-                    alt="Air bersih yang mengalir jernih"
+                    alt="Air jernih sebagai sumber kehidupan"
+                    loading="lazy"
                 >
-                <div class="isi-artikel">
-                    <h2>Pentingnya Air Bersih bagi Kehidupan</h2>
-                    <p>
-                        Air bersih sangat dibutuhkan untuk minum, memasak,
-                        mandi, dan menjaga kesehatan. Ketersediaan air bersih
-                        juga mendukung kualitas hidup masyarakat.
-                    </p>
-                    <a href="edukasi.html" class="tombol-artikel">
-                        Baca Selengkapnya
-                    </a>
-                </div>
-            </article>
+            </div>
 
-            <article class="kartu-artikel">
-                <img
-                    src="images/pencemaran-air.jpg"
-                    alt="Pencemaran sampah di lingkungan perairan"
-                >
-                <div class="isi-artikel">
-                    <h2>Dampak Pencemaran Air</h2>
-                    <p>
-                        Sampah, limbah rumah tangga, dan bahan kimia dapat
-                        menurunkan kualitas air. Pencemaran perlu dicegah
-                        agar sumber air tetap aman dan terjaga.
-                    </p>
-                    <a href="edukasi.html" class="tombol-artikel">
-                        Baca Selengkapnya
-                    </a>
-                </div>
-            </article>
+            <div class="artikel-unggulan-isi">
+                <span class="artikel-kategori">AIR BERSIH</span>
 
-            <article class="kartu-artikel">
-                <img
-                    src="images/menghemat-air.jpg"
-                    alt="Keran air yang digunakan secara bijak"
-                >
-                <div class="isi-artikel">
-                    <h2>Cara Menghemat Air di Rumah</h2>
-                    <p>
-                        Menutup keran setelah digunakan, memperbaiki
-                        kebocoran, dan menggunakan air secukupnya merupakan
-                        langkah sederhana untuk menghemat air.
-                    </p>
-                    <a href="panduan.html" class="tombol-artikel">
-                        Baca Selengkapnya
-                    </a>
-                </div>
-            </article>
+                <h2>Mengapa Air Bersih Begitu Penting bagi Kehidupan?</h2>
 
-            <article class="kartu-artikel">
-                <img
-                    src="images/menjaga-sumber-air.jpg"
-                    alt="Sumber air di lingkungan yang hijau"
-                >
-                <div class="isi-artikel">
-                    <h2>Menjaga Kelestarian Sumber Air</h2>
-                    <p>
-                        Menjaga kebersihan sungai, melindungi daerah resapan,
-                        dan tidak membuang sampah sembarangan membantu
-                        mempertahankan ketersediaan air bersih.
-                    </p>
-                    <a href="panduan.html" class="tombol-artikel">
-                        Baca Selengkapnya
-                    </a>
-                </div>
-            </article>
+                <p>
+                    Air bersih dibutuhkan untuk minum, memasak, menjaga
+                    kebersihan tubuh, dan mendukung kesehatan masyarakat.
+                    Menjaga kualitas air berarti turut menjaga kualitas
+                    kehidupan.
+                </p>
+
+                <a href="edukasi.html" class="artikel-link">
+                    Pelajari lebih lanjut <span aria-hidden="true">→</span>
+                </a>
+            </div>
         </section>
+
+        <!-- Daftar artikel -->
+        <section class="artikel-daftar">
+            <div class="artikel-section-heading">
+                <div>
+                    <p class="artikel-label">JELAJAHI PENGETAHUAN</p>
+                    <h2>Explore Our Articles.</h2>
+                </div>
+                <p>
+                    Informasi sederhana untuk membantu kita lebih peduli
+                    terhadap air dan lingkungan.
+                </p>
+            </div>
+
+            <div class="artikel-grid">
+
+                <article class="artikel-card">
+                    <img
+                        src="images/pencemaran-air.jpg"
+                        alt="Kondisi perairan yang tercemar sampah"
+                        loading="lazy"
+                    >
+
+                    <div class="artikel-card-isi">
+                        <span class="artikel-kategori">LINGKUNGAN</span>
+
+                        <h3>Dampak Pencemaran Air bagi Kehidupan</h3>
+
+                        <p>
+                            Bagaimana sampah dan limbah dapat memengaruhi
+                            kualitas sumber air serta kehidupan masyarakat?
+                        </p>
+
+                        <a href="edukasi.html" class="artikel-link">
+                            Baca selengkapnya →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="artikel-card">
+                    <img
+                        src="images/menghemat-air.jpg"
+                        alt="Keran air yang digunakan secara bijak"
+                        loading="lazy"
+                    >
+
+                    <div class="artikel-card-isi">
+                        <span class="artikel-kategori">KEHIDUPAN SEHARI-HARI</span>
+
+                        <h3>Kebiasaan Kecil untuk Menghemat Air</h3>
+
+                        <p>
+                            Langkah sederhana di rumah dapat membantu
+                            mengurangi pemborosan air dalam aktivitas harian.
+                        </p>
+
+                        <a href="panduan.html" class="artikel-link">
+                            Baca selengkapnya →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="artikel-card">
+                    <img
+                        src="images/menjaga-sumber-air.jpg"
+                        alt="Lingkungan hijau di sekitar sumber air"
+                        loading="lazy"
+                    >
+
+                    <div class="artikel-card-isi">
+                        <span class="artikel-kategori">KONSERVASI</span>
+
+                        <h3>Menjaga Sumber Air untuk Masa Depan</h3>
+
+                        <p>
+                            Mengenal pentingnya menjaga sungai, mata air,
+                            dan lingkungan agar ketersediaan air tetap terpelihara.
+                        </p>
+
+                        <a href="panduan.html" class="artikel-link">
+                            Baca selengkapnya →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Ajakan -->
+        <section class="artikel-ajakan">
+            <p class="artikel-label">SMALL ACTIONS, BIG IMPACT</p>
+
+            <h2>Masa Depan Air Bersih Dimulai dari Kita.</h2>
+
+            <p>
+                Mulailah dari kebiasaan sederhana dan jadilah bagian
+                dari perubahan untuk lingkungan yang lebih baik.
+            </p>
+
+            <a href="panduan.html" class="artikel-tombol">
+                Temukan Tips & Panduan
+            </a>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Air Bersih untuk Semua</p>
+        <p>&copy; 2026 Air Bersih Untuk Semua</p>
     </footer>
+
 </body>
 </html>
