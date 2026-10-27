@@ -472,6 +472,7 @@ footer p {
     margin-top: 30px;
     padding: 20px;
     background-color: white;
+    border-left: 5px solid white;
 }
 
 /* RESPONSIVE TABLET */
