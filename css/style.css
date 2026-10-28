@@ -614,9 +614,52 @@ body.artikel-halaman {
 }
 
 
+
 /* =========================================
-   NAVIGASI — HALAMAN TENTANG
-   Struktur mengikuti halaman Artikel
+   CSS HALAMAN TENTANG,
+   TIM PENYUSUN, DAN REFERENSI
+========================================= */
+
+:root {
+    --biru: #079BD0;
+    --biru-tua: #173E56;
+    --biru-pucat: #F3F9FE;
+    --hijau-pucat: #EEF7F6;
+    --teks: #71818A;
+    --garis: #E0E9E9;
+    --putih: #FFFFFF;
+    --bayangan: 0 12px 35px rgba(23, 62, 86, 0.07);
+}
+
+/* =========================================
+   RESET DAN PENGATURAN DASAR
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body.tentang-halaman {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--biru-tua);
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.tentang-halaman img {
+    max-width: 100%;
+}
+
+/* =========================================
+   HEADER / NAVIGASI
+   Struktur mengikuti artikel.html
 ========================================= */
 
 .tentang-halaman > header {
@@ -670,7 +713,380 @@ body.artikel-halaman {
     color: var(--biru);
 }
 
-/* Responsif tablet */
+/* =========================================
+   JUDUL DAN LABEL UMUM
+========================================= */
+
+.tentang-halaman .tentang-label,
+.tentang-halaman .tentang-subjudul,
+.tentang-halaman .bagian-label {
+    margin: 0 0 12px;
+    color: #16899D;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.tentang-halaman .tentang-hero h1,
+.tentang-halaman .tentang-teks h2,
+.tentang-halaman .tentang-judul h2,
+.tentang-halaman .tentang-sdg h2,
+.tentang-halaman .tentang-ajakan h2,
+.tentang-halaman .bagian-judul h2 {
+    color: var(--biru-tua);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+/* =========================================
+   HERO TENTANG
+========================================= */
+
+.tentang-halaman .tentang-hero {
+    padding: 92px 6% 88px;
+    background: linear-gradient(180deg, #F3F9FE, #FFFFFF);
+    text-align: center;
+}
+
+.tentang-halaman .tentang-hero-isi {
+    width: min(820px, 100%);
+    margin: auto;
+}
+
+.tentang-halaman .tentang-hero h1 {
+    margin: 0 auto 22px;
+    font-size: clamp(34px, 4.4vw, 56px);
+    letter-spacing: -1.4px;
+}
+
+.tentang-halaman .tentang-hero h1 span {
+    color: var(--biru);
+}
+
+.tentang-halaman .tentang-hero-isi > p:not(.tentang-label) {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    color: var(--teks);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Tombol */
+
+.tentang-halaman .tentang-tombol {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: var(--biru);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.tentang-halaman .tentang-tombol:hover {
+    background: #0787B5;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PENGENALAN AIR BERSIH
+========================================= */
+
+.tentang-halaman .tentang-pengenalan {
+    width: min(1200px, 88%);
+    margin: auto;
+    padding: 76px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 58px;
+}
+
+.tentang-halaman .tentang-gambar {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: var(--biru-pucat);
+}
+
+.tentang-halaman .tentang-gambar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tentang-halaman .tentang-teks h2 {
+    margin: 0 0 18px;
+    font-size: clamp(27px, 3vw, 38px);
+}
+
+.tentang-halaman .tentang-teks p:not(.tentang-subjudul) {
+    margin: 0 0 15px;
+    color: var(--teks);
+    line-height: 1.9;
+}
+
+/* =========================================
+   TUJUAN DAN MISI
+========================================= */
+
+.tentang-halaman .tentang-tujuan {
+    padding: 78px 6%;
+    background: var(--biru-pucat);
+}
+
+.tentang-halaman .bagian-judul {
+    width: min(1200px, 100%);
+    margin: 0 auto 38px;
+}
+
+.tentang-halaman .bagian-judul h2 {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 3.2vw, 42px);
+}
+
+.tentang-halaman .bagian-judul > p:last-child {
+    margin: 0;
+    color: var(--teks);
+    line-height: 1.8;
+}
+
+/* Grid umum */
+
+.tentang-halaman .tentang-grid,
+.tentang-halaman .tim-grid,
+.tentang-halaman .referensi-grid {
+    width: min(1200px, 100%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Kartu tujuan */
+
+.tentang-halaman .tentang-card {
+    min-width: 0;
+    padding: 30px;
+    border: 1px solid var(--garis);
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: var(--bayangan);
+}
+
+.tentang-halaman .tentang-nomor {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #DDF3FA;
+    color: var(--biru);
+    font-weight: 700;
+}
+
+.tentang-halaman .tentang-card h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.tentang-halaman .tentang-card p {
+    margin: 0;
+    color: var(--teks);
+    line-height: 1.85;
+}
+
+/* =========================================
+   SDG 6 DAN AJAKAN
+========================================= */
+
+.tentang-halaman .tentang-sdg {
+    padding: 76px 6%;
+    background: var(--hijau-pucat);
+}
+
+.tentang-halaman .tentang-sdg-isi {
+    width: min(900px, 100%);
+    margin: auto;
+    text-align: center;
+}
+
+.tentang-halaman .tentang-sdg h2 {
+    margin: 0 0 18px;
+    font-size: clamp(29px, 3.3vw, 42px);
+}
+
+.tentang-halaman .tentang-sdg-isi > p:not(.tentang-subjudul) {
+    max-width: 800px;
+    margin: 0 auto 26px;
+    color: var(--teks);
+    line-height: 1.9;
+}
+
+/* Ajakan */
+
+.tentang-halaman .tentang-ajakan {
+    width: min(1200px, 88%);
+    margin: 68px auto;
+    padding: 48px 30px;
+    border-radius: 24px;
+    background: #DDF3FF;
+    text-align: center;
+}
+
+.tentang-halaman .tentang-ajakan h2 {
+    margin: 0 0 14px;
+    font-size: clamp(27px, 3vw, 36px);
+}
+
+.tentang-halaman .tentang-ajakan p {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    color: var(--teks);
+    line-height: 1.9;
+}
+
+/* =========================================
+   TIM PENYUSUN
+========================================= */
+
+.tentang-halaman .tim-penyusun {
+    padding: 76px 6%;
+    background: #F7FAFA;
+    text-align: center;
+}
+
+.tentang-halaman .tim-card {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid var(--garis);
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: var(--bayangan);
+}
+
+.tentang-halaman .tim-foto {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #E4F1F3;
+}
+
+.tentang-halaman .tim-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tentang-halaman .tim-card h3 {
+    margin: 0 0 8px;
+    color: var(--biru-tua);
+    font-size: 20px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.tentang-halaman .tim-nim {
+    margin: 0 0 14px;
+    color: var(--teks);
+}
+
+.tentang-halaman .tim-tugas {
+    margin: 0;
+    color: var(--teks);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   REFERENSI
+========================================= */
+
+.tentang-halaman .referensi {
+    text-align: center;
+    padding: 76px 6%;
+    background: #EAF6F5;
+}
+
+.tentang-halaman .referensi-card {
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid var(--garis);
+    border-radius: 12px;
+    background: #FFFFFF;
+    transition: 0.2s ease;
+}
+
+.tentang-halaman .referensi-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--bayangan);
+}
+
+.tentang-halaman .referensi-kategori {
+    margin: 0 0 12px;
+    color: var(--teks);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.tentang-halaman .referensi-card h3 {
+    margin: 0 0 14px;
+    color: var(--biru-tua);
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.tentang-halaman .referensi-card > p:not(.referensi-kategori) {
+    margin: 0 0 20px;
+    color: var(--teks);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tentang-halaman .referensi-card a {
+    color: #147E9A;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tentang-halaman .referensi-card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.tentang-halaman .site-footer {
+    padding: 24px 6%;
+    background: #F7F9FB;
+    text-align: center;
+}
+
+.tentang-halaman .site-footer p {
+    margin: 0;
+    color: var(--teks);
+    font-size: 14px;
+}
+
+/* =========================================
+   RESPONSIVE: TABLET
+========================================= */
+
 @media (max-width: 950px) {
     .tentang-halaman > header nav {
         width: 90%;
@@ -680,9 +1096,22 @@ body.artikel-halaman {
     .tentang-halaman > header .menu {
         gap: 16px;
     }
+
+    .tentang-halaman .tentang-pengenalan {
+        gap: 32px;
+    }
+
+    .tentang-halaman .tentang-grid,
+    .tentang-halaman .tim-grid,
+    .tentang-halaman .referensi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-/* Responsif HP */
+/* =========================================
+   RESPONSIVE: HP
+========================================= */
+
 @media (max-width: 680px) {
     .tentang-halaman > header nav {
         min-height: auto;
@@ -704,21 +1133,47 @@ body.artikel-halaman {
     .tentang-halaman > header .menu a {
         font-size: 14px;
     }
+
+    .tentang-halaman .tentang-hero {
+        padding: 60px 6%;
+    }
+
+    .tentang-halaman .tentang-pengenalan {
+        width: 88%;
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .tentang-halaman .tentang-gambar {
+        height: 260px;
+    }
+
+    .tentang-halaman .tentang-tujuan,
+    .tentang-halaman .tentang-sdg,
+    .tentang-halaman .tim-penyusun,
+    .tentang-halaman .referensi {
+        padding: 52px 6%;
+    }
+
+    .tentang-halaman .tentang-grid,
+    .tentang-halaman .tim-grid,
+    .tentang-halaman .referensi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tentang-halaman .tentang-card,
+    .tentang-halaman .tim-card,
+    .tentang-halaman .referensi-card {
+        padding: 22px;
+    }
+
+    .tentang-halaman .tentang-ajakan {
+        margin: 45px auto;
+        padding: 34px 22px;
+    }
 }
 
-/* =====================================
-   6. EDUKASI - PENGATURAN DASAR
-===================================== */
-
-.halaman-edukasi {
-    color: #173E56;
-    background-color: #F3F9FE;
-}
-.halaman-edukasi img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-}
 /* =====================================
    7. EDUKASI - HERO SECTION
 ===================================== */
