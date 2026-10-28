@@ -882,7 +882,7 @@ img {
 }
 
 /* =====================================
-   PENGATURAN DASAR DESKTOP
+   1. PENGATURAN DASAR DESKTOP
    Berlaku untuk desktop 1440 px
 ===================================== */
 
@@ -912,75 +912,140 @@ img {
     object-fit: cover;
 }
 
-/* Responsif tablet */
+
+/* =====================================
+   2. PENGATURAN TABLET
+   Berlaku pada lebar 768 px ke bawah
+===================================== */
 
 @media (max-width: 768px) {
-    .tentang-pengenalan {
-        gap: 30px;
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 20px;
     }
 
-    .tentang-gambar img {
-        height: 330px;
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
-    .tentang-grid,
-    .tim-grid,
-    .referensi-grid {
+    .hero {
+        min-height: 420px;
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .kumpulan-kartu {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .kartu img {
+        height: 180px;
+    }
+
+    .ajakan-edukasi {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px 20px;
+    }
+
+    .ajakan-gambar {
+        flex: 1 1 180px;
+    }
+
+    .ajakan-gambar img {
+        max-width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .tombol-ajakan {
+        max-width: 100%;
     }
 }
 
-/* Responsif HP */
+
+/* =====================================
+   3. PENGATURAN SMARTPHONE
+   Berlaku pada lebar 480 px ke bawah
+===================================== */
 
 @media (max-width: 480px) {
-    .tentang-hero {
-        min-height: auto;
-        padding: 60px 6%;
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        padding: 14px 16px;
     }
 
-    .tentang-hero-isi > p:not(.tentang-label) {
-        font-size: 14px;
+    .menu {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .tentang-pengenalan {
-        padding: 50px 6%;
+    .hero {
+        min-height: 400px;
+        padding: 36px 6%;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .kumpulan-kartu {
         grid-template-columns: minmax(0, 1fr);
-        gap: 28px;
+        gap: 16px;
     }
 
-    .tentang-gambar img {
-        height: 260px;
+    .kartu {
+        width: 100%;
     }
 
-    .tentang-tujuan,
-    .tim-penyusun,
-    .referensi {
-        padding: 55px 6%;
+    .kartu img {
+        height: 190px;
     }
 
-    .tentang-grid,
-    .tim-grid,
-    .referensi-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 20px;
+    .ajakan-edukasi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px 16px;
+        gap: 16px;
     }
 
-    .tentang-sdg,
-    .tentang-ajakan {
-        padding: 55px 6%;
+    .ajakan-gambar {
+        flex: none;
+        width: 100%;
     }
 
-    .tentang-card,
-    .tim-card,
-    .referensi-card {
-        padding: 25px 22px;
+    .ajakan-gambar img {
+        width: 140px;
+        height: 120px;
+        object-fit: cover;
     }
 
-    .site-footer {
-        padding: 25px 15px;
+    .tombol-ajakan {
+        width: 100%;
     }
 }
-
 
 
 /* ========================================
@@ -1238,7 +1303,7 @@ footer p {
 }
 
 /* =====================================
-   PENGATURAN DASAR DESKTOP
+   1. PENGATURAN DASAR DESKTOP
    Berlaku untuk desktop 1440 px
 ===================================== */
 
@@ -1268,70 +1333,140 @@ img {
     object-fit: cover;
 }
 
-/* Tablet */
+
+/* =====================================
+   2. PENGATURAN TABLET
+   Berlaku pada lebar 768 px ke bawah
+===================================== */
 
 @media (max-width: 768px) {
-    main .artikel-container {
-        gap: 30px;
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 20px;
     }
 
-    main .artikel-gambar img {
-        height: 330px;
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
-    main .artikel-grid {
+    .hero {
+        min-height: 420px;
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .kumpulan-kartu {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .kartu img {
+        height: 180px;
+    }
+
+    .ajakan-edukasi {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px 20px;
+    }
+
+    .ajakan-gambar {
+        flex: 1 1 180px;
+    }
+
+    .ajakan-gambar img {
+        max-width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .tombol-ajakan {
+        max-width: 100%;
     }
 }
 
-/* HP */
+
+/* =====================================
+   3. PENGATURAN SMARTPHONE
+   Berlaku pada lebar 480 px ke bawah
+===================================== */
 
 @media (max-width: 480px) {
-    main .artikel-hero {
-        min-height: auto;
-        padding: 55px 6%;
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        padding: 14px 16px;
     }
 
-    main .artikel-hero-isi > p:last-child {
-        font-size: 14px;
+    .menu {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
     }
 
-    main .artikel-content,
-    main .artikel-daftar {
-        padding: 50px 6%;
+    .hero {
+        min-height: 400px;
+        padding: 36px 6%;
+        text-align: left;
     }
 
-    main .artikel-container {
+    .hero h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .kumpulan-kartu {
         grid-template-columns: minmax(0, 1fr);
-        gap: 28px;
+        gap: 16px;
     }
 
-    main .artikel-gambar img {
-        height: 260px;
+    .kartu {
+        width: 100%;
     }
 
-    main .artikel-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 20px;
+    .kartu img {
+        height: 190px;
     }
 
-    main .artikel-card > img {
-        height: 220px;
+    .ajakan-edukasi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px 16px;
+        gap: 16px;
     }
 
-    main .artikel-card-isi {
-        padding: 22px;
+    .ajakan-gambar {
+        flex: none;
+        width: 100%;
     }
 
-    main .artikel-ajakan {
-        padding: 55px 6%;
+    .ajakan-gambar img {
+        width: 140px;
+        height: 120px;
+        object-fit: cover;
     }
 
-    footer {
-        padding: 25px 15px;
+    .tombol-ajakan {
+        width: 100%;
     }
 }
-
 
 /* =====================================
    7. EDUKASI - HERO SECTION
