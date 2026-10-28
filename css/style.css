@@ -1673,7 +1673,14 @@ footer p {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(23, 62, 86, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.tips-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(23, 62, 86, 0.12);
+}
+
 .tips-gambar {
     height: 200px;
     object-fit: cover;
