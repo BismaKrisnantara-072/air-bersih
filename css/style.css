@@ -870,12 +870,13 @@ nav {
 
 
 /* ========================================
-   HALAMAN ARTIKEL
+ HALAMAN ARTIKEL
 ======================================== */
 
-/* Hero artikel */
+/* Hero Artikel */
 
-.artikel-hero {
+main .artikel-hero {
+    width: 100%;
     min-height: 350px;
     padding: 70px 7%;
     display: flex;
@@ -885,14 +886,14 @@ nav {
     text-align: center;
 }
 
-.artikel-hero-isi {
+main .artikel-hero-isi {
     width: 100%;
     max-width: 850px;
     margin: 0 auto;
 }
 
-.artikel-label {
-    margin-bottom: 16px;
+main .artikel-label {
+    margin: 0 0 16px;
     color: #079BD0;
     font-size: 13px;
     font-weight: 600;
@@ -900,14 +901,14 @@ nav {
     line-height: 1.7;
 }
 
-.artikel-hero h1 {
+main .artikel-hero h1 {
     margin: 0 0 20px;
     color: #173E56;
     font-size: clamp(30px, 4vw, 46px);
     line-height: 1.3;
 }
 
-.artikel-hero-isi > p:last-child {
+main .artikel-hero-isi > p:last-child {
     max-width: 750px;
     margin: 0 auto;
     color: #526875;
@@ -915,14 +916,15 @@ nav {
     line-height: 1.9;
 }
 
-/* Artikel utama */
+/* Artikel Utama */
 
-.artikel-content {
+main .artikel-content {
+    width: 100%;
     padding: 75px 7%;
     background: #FFFFFF;
 }
 
-.artikel-container {
+main .artikel-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -932,26 +934,26 @@ nav {
     gap: 50px;
 }
 
-.artikel-gambar {
+main .artikel-gambar {
     width: 100%;
     min-width: 0;
     overflow: hidden;
     border-radius: 18px;
 }
 
-.artikel-gambar img {
+main .artikel-gambar img {
     display: block;
     width: 100%;
     height: 380px;
     object-fit: cover;
 }
 
-.artikel-teks {
+main .artikel-teks {
     min-width: 0;
 }
 
-.artikel-subjudul {
-    margin-bottom: 12px;
+main .artikel-subjudul {
+    margin: 0 0 12px;
     color: #079BD0;
     font-size: 12px;
     font-weight: 600;
@@ -959,52 +961,54 @@ nav {
     line-height: 1.7;
 }
 
-.artikel-teks h2 {
+main .artikel-teks h2 {
     margin: 0 0 18px;
     color: #173E56;
     font-size: clamp(24px, 3vw, 33px);
     line-height: 1.4;
 }
 
-.artikel-teks > p:not(.artikel-subjudul) {
-    margin-bottom: 15px;
+main .artikel-teks > p:not(.artikel-subjudul) {
+    margin: 0 0 15px;
     color: #526875;
     font-size: 14px;
     line-height: 1.9;
 }
 
-.artikel-teks .tombol {
+main .artikel-teks .tombol {
     display: inline-block;
     margin-top: 10px;
 }
 
-/* Daftar artikel */
+/* Daftar Artikel */
 
-.artikel-daftar {
+main .artikel-daftar {
+    width: 100%;
     padding: 75px 7%;
     background: #F2F9FD;
 }
 
-.artikel-judul {
+main .artikel-judul {
+    width: 100%;
     max-width: 750px;
     margin: 0 auto 40px;
     text-align: center;
 }
 
-.artikel-judul h2 {
-    margin-bottom: 14px;
+main .artikel-judul h2 {
+    margin: 0 0 14px;
     color: #173E56;
     font-size: clamp(25px, 3vw, 34px);
     line-height: 1.4;
 }
 
-.artikel-judul > p:last-child {
+main .artikel-judul > p:last-child {
     color: #617783;
     font-size: 14px;
     line-height: 1.8;
 }
 
-.artikel-grid {
+main .artikel-grid {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -1013,7 +1017,7 @@ nav {
     gap: 25px;
 }
 
-.artikel-card {
+main .artikel-card {
     min-width: 0;
     overflow: hidden;
     display: flex;
@@ -1025,19 +1029,19 @@ nav {
     transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.artikel-card:hover {
+main .artikel-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(23, 62, 86, .10);
 }
 
-.artikel-card > img {
+main .artikel-card > img {
     display: block;
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-.artikel-card-isi {
+main .artikel-card-isi {
     flex: 1;
     padding: 24px;
     display: flex;
@@ -1045,21 +1049,21 @@ nav {
     align-items: flex-start;
 }
 
-.artikel-card-isi h3 {
-    margin-bottom: 12px;
+main .artikel-card-isi h3 {
+    margin: 0 0 12px;
     color: #173E56;
     font-size: 18px;
     line-height: 1.5;
 }
 
-.artikel-card-isi > p:not(.artikel-subjudul) {
-    margin-bottom: 20px;
+main .artikel-card-isi > p:not(.artikel-subjudul) {
+    margin: 0 0 20px;
     color: #617783;
     font-size: 13px;
     line-height: 1.8;
 }
 
-.artikel-card-isi a {
+main .artikel-card-isi a {
     margin-top: auto;
     color: #079BD0;
     font-size: 13px;
@@ -1067,21 +1071,22 @@ nav {
     text-decoration: none;
 }
 
-.artikel-card-isi a:hover {
+main .artikel-card-isi a:hover {
     color: #1178AE;
     text-decoration: underline;
 }
 
 /* Ajakan */
 
-.artikel-ajakan {
+main .artikel-ajakan {
+    width: 100%;
     padding: 70px 7%;
     background: #F2F9FD;
     color: #173E56;
     text-align: center;
 }
 
-.artikel-ajakan h2 {
+main .artikel-ajakan h2 {
     max-width: 900px;
     margin: 0 auto 20px;
     color: #173E56;
@@ -1089,7 +1094,7 @@ nav {
     line-height: 1.4;
 }
 
-.artikel-ajakan p {
+main .artikel-ajakan p {
     max-width: 800px;
     margin: 0 auto 30px;
     color: #526875;
@@ -1097,67 +1102,88 @@ nav {
     line-height: 1.9;
 }
 
-.artikel-ajakan .tombol {
+main .artikel-ajakan .tombol {
     display: inline-block;
 }
 
-/* Tampilan tablet */
+/* Footer Artikel */
+
+footer {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+    background: #173E56;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Tablet */
 
 @media (max-width: 900px) {
-    .artikel-container {
+    main .artikel-container {
         gap: 30px;
     }
 
-    .artikel-gambar img {
+    main .artikel-gambar img {
         height: 330px;
     }
 
-    .artikel-grid {
+    main .artikel-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Tampilan HP */
+/* HP */
 
 @media (max-width: 600px) {
-    .artikel-hero {
+    main .artikel-hero {
         min-height: auto;
         padding: 55px 6%;
     }
 
-    .artikel-hero-isi > p:last-child {
+    main .artikel-hero-isi > p:last-child {
         font-size: 14px;
     }
 
-    .artikel-content,
-    .artikel-daftar {
+    main .artikel-content,
+    main .artikel-daftar {
         padding: 50px 6%;
     }
 
-    .artikel-container {
+    main .artikel-container {
         grid-template-columns: minmax(0, 1fr);
         gap: 28px;
     }
 
-    .artikel-gambar img {
+    main .artikel-gambar img {
         height: 260px;
     }
 
-    .artikel-grid {
+    main .artikel-grid {
         grid-template-columns: minmax(0, 1fr);
         gap: 20px;
     }
 
-    .artikel-card > img {
+    main .artikel-card > img {
         height: 220px;
     }
 
-    .artikel-card-isi {
+    main .artikel-card-isi {
         padding: 22px;
     }
 
-    .artikel-ajakan {
+    main .artikel-ajakan {
         padding: 55px 6%;
+    }
+
+    footer {
+        padding: 25px 15px;
     }
 }
 
