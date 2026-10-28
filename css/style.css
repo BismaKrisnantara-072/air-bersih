@@ -361,1242 +361,779 @@ nav {
     }
 }
 
-/* =====================================
+/* =========================
    HALAMAN ARTIKEL
-===================================== */
+========================= */
 
-body.artikel-halaman {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #173E56;
-    background: #FFFFFF;
-    line-height: 1.7;
-}
-
-.artikel-halaman img {
-    max-width: 100%;
-}
-
-/* =====================================
-   2. HEADER DAN NAVIGASI
-===================================== */
-
-.artikel-halaman header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: #F7F9FB;
-    box-shadow: 0 2px 12px rgba(23, 62, 86, 0.08);
-}
-
-.artikel-halaman nav {
-    width: 100%;
-    max-width: 1400px;
-    min-height: 78px;
-    margin: 0 auto;
-    padding: 16px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-/* LOGO DAN NAMA WEBSITE */
-
-.artikel-halaman .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #079BD0;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.artikel-halaman .logo img {
-    display: block;
-    width: 38px;
-    height: 38px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.artikel-halaman .logo span {
-    display: inline-block;
-}
-
-/* MENU NAVIGASI */
-
-.artikel-halaman .menu {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.artikel-halaman .menu a {
-    color: #173E56;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
-.artikel-halaman .menu a:hover,
-.artikel-halaman .menu a.aktif {
-    color: #079BD0;
-}
-
-/* =====================================
-   3. BAGIAN PEMBUKA ARTIKEL
-===================================== */
-
-.artikel-halaman .artikel-hero {
+.artikel-hero {
+    min-height: 350px;
     padding: 80px 8%;
-    background: #FFFFFF;
-    text-align: center;
-}
-
-.artikel-halaman .artikel-hero-isi {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.artikel-halaman .artikel-label {
-    margin-bottom: 20px;
-    color: #07869B;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.artikel-halaman .artikel-hero h1 {
-    max-width: 850px;
-    margin: 0 auto 24px;
-    color: #173E56;
-    font-size: clamp(34px, 4vw, 58px);
-    line-height: 1.2;
-}
-
-.artikel-halaman .artikel-hero-isi > p:last-child {
-    max-width: 750px;
-    margin: 0 auto;
-    color: #526B7A;
-    font-size: 17px;
-    line-height: 1.9;
-}
-
-/* =====================================
-   4. ARTIKEL UTAMA
-===================================== */
-
-.artikel-halaman .artikel-content {
-    padding: 65px 8%;
-    background: #F0F8F8;
-    border-radius: 20px;
-}
-
-.artikel-halaman .artikel-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    display: flex;
     align-items: center;
-    gap: 55px;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    background:
+        linear-gradient(rgba(10, 48, 67, .72), rgba(10, 48, 67, .72)),
+        url("../image/mata air.webp") center/cover no-repeat;
 }
 
-.artikel-halaman .artikel-gambar {
-    width: 100%;
-    min-width: 0;
-    overflow: hidden;
-    border-radius: 16px;
+.artikel-hero-isi {
+    max-width: 800px;
 }
 
-.artikel-halaman .artikel-gambar img {
-    display: block;
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.artikel-halaman .artikel-teks {
-    min-width: 0;
-    overflow-wrap: break-word;
-}
-
-.artikel-halaman .artikel-subjudul {
+.artikel-label {
     margin-bottom: 14px;
-    color: #07869B;
-    font-size: 12px;
+    color: #8BE0F5;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
 
-.artikel-halaman .artikel-teks h2 {
-    margin: 0 0 20px;
-    color: #173E56;
-    font-size: clamp(27px, 3vw, 38px);
+.artikel-hero h1 {
+    margin-bottom: 18px;
+    font-size: clamp(30px, 4vw, 48px);
     line-height: 1.3;
 }
 
-.artikel-halaman .artikel-teks p:not(.artikel-subjudul) {
-    margin-bottom: 16px;
-    color: #526B7A;
+.artikel-hero-isi > p:last-child {
+    max-width: 680px;
+    margin: 0 auto;
     font-size: 15px;
     line-height: 1.9;
 }
 
-/* =====================================
-   5. TOMBOL ARTIKEL
-===================================== */
+/* Artikel utama */
 
-.artikel-halaman .tombol {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 13px 25px;
-    border: none;
-    border-radius: 30px;
-    background: #079BD0;
-    color: #FFFFFF;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.25s ease, transform 0.25s ease;
-}
-
-.artikel-halaman .tombol:hover {
-    background: #057EAA;
-    transform: translateY(-2px);
-}
-
-/* =====================================
-   6. DAFTAR ARTIKEL
-===================================== */
-
-.artikel-halaman .artikel-daftar {
-    padding: 75px 8%;
+.artikel-content {
+    padding: 80px 7%;
     background: #FFFFFF;
 }
 
-.artikel-halaman .artikel-judul {
-    max-width: 750px;
+.artikel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.artikel-gambar {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.artikel-gambar img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.artikel-subjudul {
+    margin-bottom: 10px;
+    color: #079BD0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.artikel-teks h2 {
+    margin-bottom: 18px;
+    color: #173E56;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.4;
+}
+
+.artikel-teks > p:not(.artikel-subjudul) {
+    margin-bottom: 14px;
+    color: #526875;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.artikel-teks .tombol {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+/* Daftar artikel */
+
+.artikel-daftar {
+    padding: 75px 7%;
+    background: #F4F9FC;
+}
+
+.artikel-judul {
+    max-width: 700px;
     margin: 0 auto 40px;
     text-align: center;
 }
 
-.artikel-halaman .artikel-judul h2 {
-    margin-bottom: 18px;
-    font-size: clamp(28px, 3vw, 40px);
-    line-height: 1.3;
+.artikel-judul h2 {
+    margin-bottom: 12px;
+    color: #173E56;
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.4;
 }
 
-.artikel-halaman .artikel-judul > p:last-child {
-    color: #526B7A;
+.artikel-judul > p:last-child {
+    color: #617783;
+    font-size: 14px;
     line-height: 1.8;
 }
 
-.artikel-halaman .artikel-grid {
+.artikel-grid {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.artikel-halaman .artikel-card {
-    min-width: 0;
+.artikel-card {
     overflow: hidden;
-    border: 1px solid #E5EEF2;
-    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;
-    box-shadow: 0 5px 20px rgba(23, 62, 86, 0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #E4EDF2;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(23, 62, 86, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.artikel-halaman .artikel-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(23, 62, 86, 0.10);
+.artikel-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(23, 62, 86, .12);
 }
 
-.artikel-halaman .artikel-card img {
+.artikel-card > img {
     display: block;
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-.artikel-halaman .artikel-card-isi {
+.artikel-card-isi {
+    flex: 1;
     padding: 25px;
-}
-
-.artikel-halaman .artikel-card-isi h3 {
-    margin: 0 0 14px;
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-.artikel-halaman .artikel-card-isi p:not(.artikel-subjudul) {
-    margin-bottom: 20px;
-    color: #526B7A;
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-.artikel-halaman .artikel-card-isi a {
-    color: #078DBB;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.artikel-halaman .artikel-card-isi a:hover {
-    color: #057EAA;
-}
-
-/* =====================================
-   7. BAGIAN AJAKAN
-===================================== */
-
-.artikel-halaman .artikel-ajakan {
-    padding: 65px 8%;
-    background: #F3F9FE;
-    text-align: center;
-}
-
-.artikel-halaman .artikel-ajakan h2 {
-    max-width: 750px;
-    margin: 0 auto 18px;
-    font-size: clamp(28px, 3vw, 38px);
-    line-height: 1.3;
-}
-
-.artikel-halaman .artikel-ajakan p {
-    max-width: 700px;
-    margin: 0 auto 25px;
-    color: #526B7A;
-    line-height: 1.8;
-}
-
-/* =====================================
-   8. FOOTER
-===================================== */
-
-.artikel-halaman footer {
-    padding: 25px 8%;
-    background: #173E56;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.artikel-halaman footer p {
-    margin: 0;
-}
-
-/* =====================================
-   9. RESPONSIF TABLET
-===================================== */
-
-@media (max-width: 950px) {
-    .artikel-halaman nav {
-        gap: 18px;
-    }
-
-    .artikel-halaman .menu {
-        gap: 16px;
-    }
-
-    .artikel-halaman .artikel-container {
-        gap: 30px;
-    }
-
-    .artikel-halaman .artikel-gambar img {
-        height: 320px;
-    }
-
-    .artikel-halaman .artikel-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .artikel-halaman .artikel-card:last-child {
-        grid-column: 1 / -1;
-        width: 100%;
-        max-width: 500px;
-        justify-self: center;
-    }
-}
-
-/* =====================================
-   10. RESPONSIF HP
-===================================== */
-
-@media (max-width: 650px) {
-    /* Navigasi */
-    .artikel-halaman nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 14px 20px;
-    }
-
-    .artikel-halaman .logo {
-        font-size: 22px;
-    }
-
-    .artikel-halaman .logo img {
-        width: 36px;
-        height: 36px;
-    }
-
-    .artikel-halaman .menu {
-        justify-content: center;
-        gap: 10px 16px;
-    }
-
-    .artikel-halaman .menu a {
-        font-size: 12px;
-    }
-
-    /* Hero */
-    .artikel-halaman .artikel-hero {
-        padding: 50px 6%;
-    }
-
-    .artikel-halaman .artikel-hero h1 {
-        font-size: 34px;
-    }
-
-    .artikel-halaman .artikel-hero-isi > p:last-child {
-        font-size: 15px;
-    }
-
-    /* Artikel utama */
-    .artikel-halaman .artikel-content {
-        padding: 35px 6%;
-        border-radius: 14px;
-    }
-
-    .artikel-halaman .artikel-container {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 28px;
-    }
-
-    .artikel-halaman .artikel-gambar img {
-        height: 250px;
-    }
-
-    .artikel-halaman .artikel-teks h2 {
-        font-size: 28px;
-    }
-
-    /* Daftar artikel */
-    .artikel-halaman .artikel-daftar {
-        padding: 50px 6%;
-    }
-
-    .artikel-halaman .artikel-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .artikel-halaman .artikel-card:last-child {
-        grid-column: auto;
-        max-width: none;
-    }
-
-    .artikel-halaman .artikel-card-isi {
-        padding: 20px;
-    }
-
-    /* Ajakan */
-    .artikel-halaman .artikel-ajakan {
-        padding: 50px 6%;
-    }
-}
-
-
-/* =====================================
-   HALAMAN TENTANG
-===================================== */
-
-body.tentang-halaman {
-    font-family: 'Poppins', sans-serif;
-    color: #173E56;
-    background: #FFFFFF;
-    line-height: 1.7;
-}
-
-.tentang-halaman img {
-    display: block;
-    max-width: 100%;
-}
-
-/* =====================================
-   2. HEADER DAN NAVIGASI
-===================================== */
-
-.tentang-halaman header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    background: #F7F9FB;
-    box-shadow: 0 2px 12px rgba(23, 62, 86, 0.08);
-}
-
-.tentang-halaman nav {
-    width: 100%;
-    max-width: 1400px;
-    min-height: 78px;
-    margin: 0 auto;
-    padding: 16px 5%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-/* LOGO */
-
-.tentang-halaman .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #079BD0;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.tentang-halaman .logo img {
-    width: 38px;
-    height: 38px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-/* MENU */
-
-.tentang-halaman .menu {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.tentang-halaman .menu a {
-    color: #173E56;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
-.tentang-halaman .menu a:hover,
-.tentang-halaman .menu a[aria-current="page"] {
-    color: #079BD0;
-}
-
-/* =====================================
-   3. JUDUL BAGIAN
-===================================== */
-
-.tentang-halaman .bagian-judul {
-    max-width: 760px;
-    margin: 0 auto 42px;
-    text-align: center;
-}
-
-.tentang-halaman .bagian-judul h2 {
-    margin-bottom: 14px;
-    color: #173E56;
-    font-size: clamp(28px, 3vw, 40px);
-    line-height: 1.3;
-}
-
-.tentang-halaman .bagian-judul > p:last-child {
-    color: #526B7A;
-    font-size: 15px;
-    line-height: 1.8;
-}
-
-.tentang-halaman .bagian-label {
-    margin-bottom: 8px;
-    color: #078BC5;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-/* =====================================
-   4. HERO TENTANG
-===================================== */
-
-.tentang-halaman .tentang-hero {
-    min-height: 510px;
-    padding: 85px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background:
-        linear-gradient(
-            135deg,
-            #EAF8FF 0%,
-            #F5FBFF 55%,
-            #DDF3FF 100%
-        );
-}
-
-.tentang-halaman .tentang-hero-isi {
-    width: 100%;
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-.tentang-halaman .tentang-label {
-    margin-bottom: 20px;
-    color: #07869B;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.tentang-halaman .tentang-hero h1 {
-    margin-bottom: 24px;
-    color: #173E56;
-    font-size: clamp(36px, 4.5vw, 58px);
-    line-height: 1.2;
-}
-
-.tentang-halaman .tentang-hero h1 span {
-    color: #079BD0;
-}
-
-.tentang-halaman .tentang-hero-isi > p:not(.tentang-label) {
-    max-width: 760px;
-    margin: 0 auto 30px;
-    color: #526B7A;
-    font-size: 16px;
-    line-height: 1.9;
-}
-
-/* =====================================
-   5. TOMBOL UTAMA
-===================================== */
-
-.tentang-halaman .tentang-tombol {
-    display: inline-block;
-    padding: 13px 27px;
-    border: none;
-    border-radius: 30px;
-    background: #079BD0;
-    color: #FFFFFF;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    transition:
-        background 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.tentang-halaman .tentang-tombol:hover {
-    background: #057EAA;
-    transform: translateY(-2px);
-    box-shadow: 0 7px 18px rgba(7, 155, 208, 0.18);
-}
-
-/* =====================================
-   6. BAGIAN PENGENALAN
-===================================== */
-
-.tentang-halaman .tentang-pengenalan {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 80px 8%;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: center;
-    gap: 60px;
-}
-
-.tentang-halaman .tentang-gambar {
-    width: 100%;
-    min-width: 0;
-    overflow: hidden;
-    border-radius: 18px;
-    background: #EAF7FF;
-}
-
-.tentang-halaman .tentang-gambar img {
-    width: 100%;
-    height: 390px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.tentang-halaman .tentang-gambar:hover img {
-    transform: scale(1.03);
-}
-
-.tentang-halaman .tentang-teks {
-    min-width: 0;
-    overflow-wrap: break-word;
-}
-
-.tentang-halaman .tentang-subjudul {
+.artikel-card-isi h3 {
     margin-bottom: 12px;
-    color: #078BC5;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-.tentang-halaman .tentang-teks h2 {
-    margin-bottom: 20px;
-    color: #173E56;
-    font-size: clamp(27px, 3vw, 38px);
-    line-height: 1.3;
-}
-
-.tentang-halaman .tentang-teks p:not(.tentang-subjudul) {
-    margin-bottom: 16px;
-    color: #526B7A;
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-.tentang-halaman .tentang-teks p:last-child {
-    margin-bottom: 0;
-}
-
-/* =====================================
-   7. TUJUAN DAN MISI
-===================================== */
-
-.tentang-halaman .tentang-tujuan {
-    padding: 80px 8%;
-    background: linear-gradient(
-        180deg,
-        #F3FAFF 0%,
-        #EAF7FF 100%
-    );
-}
-
-.tentang-halaman .tentang-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tentang-halaman .tentang-card {
-    min-width: 0;
-    padding: 30px 26px;
-    border: 1px solid #E3EFF6;
-    border-radius: 18px;
-    background: #FFFFFF;
-    box-shadow: 0 6px 22px rgba(23, 62, 86, 0.05);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.tentang-halaman .tentang-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(23, 62, 86, 0.10);
-}
-
-.tentang-halaman .tentang-nomor {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 14px;
-    background: #E1F5FF;
-    color: #078BC5;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.tentang-halaman .tentang-card h3 {
-    margin-bottom: 14px;
     color: #173E56;
     font-size: 19px;
     line-height: 1.5;
 }
 
-.tentang-halaman .tentang-card p {
-    color: #526B7A;
+.artikel-card-isi > p:not(.artikel-subjudul) {
+    margin-bottom: 20px;
+    color: #617783;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.artikel-card-isi a {
+    margin-top: auto;
+    color: #079BD0;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.artikel-card-isi a:hover {
+    color: #1178AE;
+    text-decoration: underline;
+}
+
+/* Bagian ajakan artikel */
+.artikel-ajakan {
+    padding: 75px 7%;
+    margin: 0;
+    background-color: #FFFF;
+    color: #173E56;
+    text-align: center;
+}
+
+.artikel-ajakan h2 {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    color: #173E56;
+    font-size: clamp(28px, 3vw, 44px);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.artikel-ajakan p {
+    max-width: 850px;
+    margin: 0 auto 48px;
+    color: #526875;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.artikel-ajakan .tombol {
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+    background-color: #173E56;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* Menu aktif */
+
+.menu a[aria-current="page"] {
+    color: #079BD0;
+    font-weight: 700;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .artikel-container {
+        gap: 30px;
+    }
+
+    .artikel-gambar img {
+        height: 360px;
+    }
+
+    .artikel-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .artikel-card:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* HP */
+
+@media (max-width: 600px) {
+    .artikel-hero {
+        min-height: 320px;
+        padding: 60px 6%;
+    }
+
+    .artikel-hero-isi > p:last-child {
+        font-size: 13px;
+    }
+
+    .artikel-content,
+    .artikel-daftar {
+        padding: 50px 6%;
+    }
+
+    .artikel-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .artikel-gambar img {
+        height: 260px;
+    }
+
+    .artikel-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .artikel-card:last-child {
+        grid-column: auto;
+    }
+
+    .artikel-card > img {
+        height: 220px;
+    }
+
+    .artikel-card-isi {
+        padding: 22px;
+    }
+
+    .artikel-ajakan {
+        padding: 50px 6%;
+    }
+}
+
+
+/* =========================
+   HALAMAN TENTANG
+========================= */
+
+.tentang-hero {
+    padding: 85px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 390px;
+    text-align: center;
+    background: linear-gradient(135deg, #EAF7FC, #F7FBFD);
+}
+
+.tentang-hero-isi {
+    max-width: 850px;
+}
+
+.tentang-label {
+    margin-bottom: 18px;
+    color: #079BD0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.tentang-hero h1 {
+    margin-bottom: 20px;
+    color: #173E56;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.3;
+}
+
+.tentang-hero h1 span {
+    color: #079BD0;
+}
+
+.tentang-hero-isi > p:not(.tentang-label) {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    color: #526875;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.tentang-tombol {
+    display: inline-block;
+    padding: 13px 27px;
+    border-radius: 30px;
+    background: #079BD0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .25s ease, transform .25s ease;
+}
+
+.tentang-tombol:hover {
+    background: #1178AE;
+    transform: translateY(-2px);
+}
+
+/* Pengenalan */
+
+.tentang-pengenalan {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.tentang-gambar {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.tentang-gambar img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.tentang-teks h2 {
+    margin-bottom: 20px;
+    color: #173E56;
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.4;
+}
+
+.tentang-subjudul {
+    margin-bottom: 12px;
+    color: #079BD0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.tentang-teks > p:not(.tentang-subjudul) {
+    margin-bottom: 15px;
+    color: #526875;
     font-size: 14px;
     line-height: 1.9;
 }
 
-/* =====================================
-   8. BAGIAN SDG 6
-===================================== */
+/* Judul bagian */
 
-.tentang-halaman .tentang-sdg {
-    padding: 75px 8%;
-    background: #FFFFFF;
-}
-
-.tentang-halaman .tentang-sdg-isi {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 55px 45px;
-    border: 1px solid #DCEFF8;
-    border-radius: 20px;
-    background: linear-gradient(
-        120deg,
-        #E5F6FF 0%,
-        #F3FAFF 100%
-    );
+.bagian-judul {
+    max-width: 760px;
+    margin: 0 auto 40px;
     text-align: center;
 }
 
-.tentang-halaman .tentang-sdg-isi h2 {
-    max-width: 800px;
-    margin: 0 auto 20px;
+.bagian-judul h2 {
+    margin-bottom: 14px;
     color: #173E56;
-    font-size: clamp(28px, 3vw, 40px);
-    line-height: 1.3;
+    font-size: clamp(26px, 3vw, 35px);
+    line-height: 1.4;
 }
 
-.tentang-halaman .tentang-sdg-isi > p:not(.tentang-subjudul) {
-    max-width: 800px;
-    margin: 0 auto 28px;
-    color: #526B7A;
-    font-size: 15px;
-    line-height: 1.9;
+.bagian-judul > p:last-child {
+    color: #617783;
+    font-size: 14px;
+    line-height: 1.8;
 }
 
-/* =====================================
-   9. BAGIAN AJAKAN
-===================================== */
-
-.tentang-halaman .tentang-ajakan {
-    padding: 70px 8%;
-    background: #173E56;
-    text-align: center;
+.bagian-label {
+    margin-bottom: 10px;
+    color: #079BD0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
 }
 
-.tentang-halaman .tentang-ajakan h2 {
-    max-width: 800px;
-    margin: 0 auto 18px;
-    color: #FFFFFF;
-    font-size: clamp(28px, 3vw, 38px);
-    line-height: 1.3;
+/* Tujuan dan misi */
+
+.tentang-tujuan {
+    padding: 80px 7%;
+    background: #F2F9FD;
 }
 
-.tentang-halaman .tentang-ajakan p {
-    max-width: 750px;
-    margin: 0 auto 28px;
-    color: #D9EAF4;
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-.tentang-halaman .tentang-ajakan .tentang-tombol {
-    background: #27B6E8;
-    color: #FFFFFF;
-}
-
-.tentang-halaman .tentang-ajakan .tentang-tombol:hover {
-    background: #079BD0;
-}
-
-/* =====================================
-   10. TIM PENYUSUN
-===================================== */
-
-.tentang-halaman .tim-penyusun {
-    padding: 80px 8%;
-    background: #F5FAFD;
-}
-
-.tentang-halaman .tim-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 25px;
+.tentang-grid {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
 }
 
-.tentang-halaman .tim-card {
-    min-width: 0;
-    overflow: hidden;
-    padding: 28px 24px;
-    border: 1px solid #E4EEF4;
-    border-radius: 18px;
+.tentang-card {
+    padding: 30px 26px;
     background: #FFFFFF;
-    box-shadow: 0 6px 22px rgba(23, 62, 86, 0.05);
-    text-align: center;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    border: 1px solid #E3EEF3;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(23, 62, 86, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.tentang-halaman .tim-card:hover {
+.tentang-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(23, 62, 86, 0.10);
+    box-shadow: 0 12px 25px rgba(23, 62, 86, .10);
 }
 
-.tentang-halaman .tim-foto {
+.tentang-nomor {
+    margin-bottom: 20px;
+    color: #079BD0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.tentang-card h3 {
+    margin-bottom: 12px;
+    color: #173E56;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.tentang-card p {
+    color: #617783;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* Dukungan SDG 6 */
+
+.tentang-sdg {
+    padding: 75px 7%;
+    background: #173E56;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.tentang-sdg-isi {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.tentang-sdg .tentang-subjudul {
+    color: #8BE0F5;
+}
+
+.tentang-sdg h2 {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: clamp(26px, 3vw, 35px);
+    line-height: 1.4;
+}
+
+.tentang-sdg-isi > p:not(.tentang-subjudul) {
+    margin-bottom: 28px;
+    color: #DCEAF0;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.tentang-sdg .tentang-tombol {
+    background: #209BD5;
+}
+
+.tentang-sdg .tentang-tombol:hover {
+    background: #1178AE;
+}
+
+/* Ajakan */
+
+.tentang-ajakan {
+    padding: 70px 7%;
+    background: #F2F9FD;
+    color: #173E56;
+    text-align: center;
+}
+
+.tentang-ajakan h2 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #173E56;
+    font-size: clamp(26px, 3vw, 36px);
+    line-height: 1.4;
+}
+
+.tentang-ajakan p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #526875;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Tim penyusun */
+
+.tim-penyusun {
+    padding: 80px 7%;
+    background: #FFFFFF;
+}
+
+.tim-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.tim-card {
+    overflow: hidden;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 1px solid #E3EEF3;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(23, 62, 86, .06);
+    text-align: center;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tim-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(23, 62, 86, .11);
+}
+
+.tim-foto {
     width: 145px;
     height: 145px;
     margin: 0 auto 22px;
     overflow: hidden;
-    border: 4px solid #E1F5FF;
     border-radius: 50%;
-    background: #EAF7FF;
+    background: #EAF4F8;
 }
 
-.tentang-halaman .tim-foto img {
+.tim-foto img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
-.tentang-halaman .tim-card h3 {
+.tim-card h3 {
     margin-bottom: 8px;
     color: #173E56;
     font-size: 17px;
     line-height: 1.5;
-    overflow-wrap: anywhere;
 }
 
-.tentang-halaman .tim-nim {
-    margin-bottom: 16px;
-    color: #078BC5;
+.tim-nim {
+    margin-bottom: 14px;
+    color: #079BD0;
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
-.tentang-halaman .tim-tugas {
-    color: #526B7A;
+.tim-tugas {
+    color: #617783;
     font-size: 13px;
-    line-height: 1.9;
+    line-height: 1.8;
     text-align: left;
 }
 
-/* =====================================
-   11. REFERENSI
-===================================== */
+/* Referensi */
 
-.tentang-halaman .referensi {
-    padding: 80px 8%;
-    background: #FFFFFF;
+.referensi {
+    padding: 80px 7%;
+    background: #F2F9FD;
 }
 
-.tentang-halaman .referensi-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 25px;
+.referensi-grid {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
 }
 
-.tentang-halaman .referensi-card {
-    min-width: 0;
+.referensi-card {
     padding: 28px 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid #E5EEF2;
-    border-radius: 16px;
     background: #FFFFFF;
-    box-shadow: 0 5px 20px rgba(23, 62, 86, 0.05);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    border: 1px solid #E3EEF3;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(23, 62, 86, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.tentang-halaman .referensi-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(23, 62, 86, 0.09);
+.referensi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(23, 62, 86, .10);
 }
 
-.tentang-halaman .referensi-kategori {
+.referensi-kategori {
     margin-bottom: 14px;
-    color: #078BC5;
-    font-size: 10px;
+    color: #079BD0;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: .8px;
     line-height: 1.7;
 }
 
-.tentang-halaman .referensi-card h3 {
+.referensi-card h3 {
     margin-bottom: 14px;
     color: #173E56;
     font-size: 18px;
     line-height: 1.5;
 }
 
-.tentang-halaman .referensi-card > p:not(.referensi-kategori) {
+.referensi-card > p:not(.referensi-kategori) {
     margin-bottom: 22px;
-    color: #526B7A;
+    color: #617783;
     font-size: 13px;
-    line-height: 1.9;
+    line-height: 1.8;
 }
 
-.tentang-halaman .referensi-card a {
+.referensi-card a {
     margin-top: auto;
-    color: #078DBB;
+    color: #079BD0;
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
-    transition: color 0.25s ease;
 }
 
-.tentang-halaman .referensi-card a:hover {
-    color: #057EAA;
+.referensi-card a:hover {
+    color: #1178AE;
     text-decoration: underline;
 }
 
-/* =====================================
-   12. FOOTER
-===================================== */
+/* Menu aktif */
 
-.tentang-halaman .site-footer {
-    padding: 25px 8%;
-    background: #173E56;
-    color: #FFFFFF;
-    text-align: center;
+.menu a[aria-current="page"] {
+    color: #079BD0;
+    font-weight: 700;
 }
 
-.tentang-halaman .site-footer p {
-    margin: 0;
-    font-size: 13px;
-}
+/* Tablet */
 
-/* =====================================
-   13. RESPONSIF TABLET
-===================================== */
-
-@media (max-width: 950px) {
-    .tentang-halaman nav {
-        gap: 18px;
+@media (max-width: 900px) {
+    .tentang-pengenalan {
+        gap: 30px;
     }
 
-    .tentang-halaman .menu {
-        gap: 16px;
+    .tentang-gambar img {
+        height: 340px;
     }
 
-    .tentang-halaman .tentang-pengenalan {
-        gap: 35px;
-    }
-
-    .tentang-halaman .tentang-gambar img {
-        height: 330px;
-    }
-
-    .tentang-halaman .tentang-grid,
-    .tentang-halaman .tim-grid,
-    .tentang-halaman .referensi-grid {
+    .tentang-grid,
+    .tim-grid,
+    .referensi-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* =====================================
-   14. RESPONSIF HP
-===================================== */
+/* HP */
 
-@media (max-width: 650px) {
-    /* Navbar */
-    .tentang-halaman nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 14px 20px;
-    }
-
-    .tentang-halaman .logo {
-        font-size: 22px;
-    }
-
-    .tentang-halaman .logo img {
-        width: 36px;
-        height: 36px;
-    }
-
-    .tentang-halaman .menu {
-        justify-content: center;
-        gap: 10px 16px;
-    }
-
-    .tentang-halaman .menu a {
-        font-size: 12px;
-    }
-
-    /* Judul bagian */
-    .tentang-halaman .bagian-judul {
-        margin-bottom: 30px;
-    }
-
-    .tentang-halaman .bagian-judul h2 {
-        font-size: 28px;
-    }
-
-    /* Hero */
-    .tentang-halaman .tentang-hero {
+@media (max-width: 600px) {
+    .tentang-hero {
         min-height: auto;
         padding: 60px 6%;
     }
 
-    .tentang-halaman .tentang-label {
-        font-size: 11px;
-        letter-spacing: 1.5px;
-    }
-
-    .tentang-halaman .tentang-hero h1 {
-        font-size: 35px;
-    }
-
-    .tentang-halaman .tentang-hero-isi > p:not(.tentang-label) {
+    .tentang-hero-isi > p:not(.tentang-label) {
         font-size: 14px;
     }
 
-    /* Pengenalan */
-    .tentang-halaman .tentang-pengenalan {
+    .tentang-pengenalan {
         padding: 50px 6%;
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: 1fr;
         gap: 28px;
     }
 
-    .tentang-halaman .tentang-gambar img {
-        height: 250px;
+    .tentang-gambar img {
+        height: 260px;
     }
 
-    .tentang-halaman .tentang-teks h2 {
-        font-size: 28px;
-    }
-
-    .tentang-halaman .tentang-teks p:not(.tentang-subjudul) {
-        font-size: 14px;
-    }
-
-    /* Tujuan dan misi */
-    .tentang-halaman .tentang-tujuan {
+    .tentang-tujuan,
+    .tim-penyusun,
+    .referensi {
         padding: 55px 6%;
     }
 
-    .tentang-halaman .tentang-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
+    .tentang-grid,
+    .tim-grid,
+    .referensi-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .tentang-halaman .tentang-card {
+    .tentang-card {
+        padding: 25px;
+    }
+
+    .tentang-sdg,
+    .tentang-ajakan {
+        padding: 55px 6%;
+    }
+
+    .tim-card {
         padding: 25px 22px;
     }
 
-    /* SDG 6 */
-    .tentang-halaman .tentang-sdg {
-        padding: 50px 6%;
-    }
-
-    .tentang-halaman .tentang-sdg-isi {
-        padding: 35px 22px;
-        border-radius: 16px;
-    }
-
-    .tentang-halaman .tentang-sdg-isi h2 {
-        font-size: 28px;
-    }
-
-    .tentang-halaman .tentang-sdg-isi > p:not(.tentang-subjudul) {
-        font-size: 14px;
-    }
-
-    /* Ajakan */
-    .tentang-halaman .tentang-ajakan {
-        padding: 50px 6%;
-    }
-
-    .tentang-halaman .tentang-ajakan h2 {
-        font-size: 28px;
-    }
-
-    .tentang-halaman .tentang-ajakan p {
-        font-size: 14px;
-    }
-
-    /* Tim */
-    .tentang-halaman .tim-penyusun {
-        padding: 55px 6%;
-    }
-
-    .tentang-halaman .tim-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-    }
-
-    .tentang-halaman .tim-card {
-        padding: 26px 22px;
-    }
-
-    .tentang-halaman .tim-foto {
-        width: 130px;
-        height: 130px;
-    }
-
-    /* Referensi */
-    .tentang-halaman .referensi {
-        padding: 55px 6%;
-    }
-
-    .tentang-halaman .referensi-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-    }
-
-    .tentang-halaman .referensi-card {
-        padding: 24px 22px;
-    }
-
-    /* Footer */
-    .tentang-halaman .site-footer {
-        padding: 22px 6%;
-    }
-}
-
-/* =====================================
-   15. HP LAYAR KECIL
-===================================== */
-
-@media (max-width: 380px) {
-    .tentang-halaman .menu {
-        column-gap: 12px;
-        row-gap: 8px;
-    }
-
-    .tentang-halaman .menu a {
-        font-size: 11px;
-    }
-
-    .tentang-halaman .tentang-hero h1 {
-        font-size: 30px;
-    }
-
-    .tentang-halaman .tentang-tombol {
-        padding: 12px 20px;
-        font-size: 13px;
+    .referensi-card {
+        padding: 25px;
     }
 }
 
