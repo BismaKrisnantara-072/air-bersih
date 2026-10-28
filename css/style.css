@@ -151,21 +151,6 @@ nav {
     font-size: 16px;
     line-height: 1.9;
 }
-.tombol {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 30px;
-    background-color: #209bd5;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.tombol:hover {
-    background-color: #1178ae;
-    transform: translateY(-2px);
-}
 /* ===== BAGIAN MULAI DARI LANGKAH KECIL ===== */
 
 .manfaat {
