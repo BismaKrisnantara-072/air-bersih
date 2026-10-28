@@ -295,11 +295,109 @@ nav {
 .tombol-ajakan:hover {
     background-color: #1178ae;
 }
+
+/* =====================================
+   1. PENGATURAN DASAR DESKTOP
+   Berlaku untuk desktop 1440 px
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.kartu {
+    width: 100%;
+    min-width: 0;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* =====================================
+   2. PENGATURAN TABLET
+   Berlaku pada lebar 768 px ke bawah
+===================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 20px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .kumpulan-kartu {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .kartu img {
+        height: 180px;
+    }
+
+    .ajakan-edukasi {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px 20px;
+    }
+
+    .ajakan-gambar {
+        flex: 1 1 180px;
+    }
+
+    .ajakan-gambar img {
+        max-width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .tombol-ajakan {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
 /* =====================================
    PENGATURAN RESPONSIF KHUSUS HP (MOBILE)
 ===================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -783,9 +881,40 @@ nav {
     line-height: 1.7;
 }
 
+/* =====================================
+   PENGATURAN DASAR DESKTOP
+   Berlaku untuk desktop 1440 px
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.kartu {
+    width: 100%;
+    min-width: 0;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
 /* Responsif tablet */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .tentang-pengenalan {
         gap: 30px;
     }
@@ -803,7 +932,7 @@ nav {
 
 /* Responsif HP */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .tentang-hero {
         min-height: auto;
         padding: 60px 6%;
@@ -1108,9 +1237,40 @@ footer p {
     line-height: 1.7;
 }
 
+/* =====================================
+   PENGATURAN DASAR DESKTOP
+   Berlaku untuk desktop 1440 px
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.kartu {
+    width: 100%;
+    min-width: 0;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
 /* Tablet */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     main .artikel-container {
         gap: 30px;
     }
@@ -1126,7 +1286,7 @@ footer p {
 
 /* HP */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     main .artikel-hero {
         min-height: auto;
         padding: 55px 6%;
@@ -1378,12 +1538,44 @@ footer p {
     font-size: 13px;
     line-height: 1.7;
 }
+
 /* =====================================
-   13. RESPONSIVE TABLET
+   PENGATURAN DASAR DESKTOP
+   Berlaku untuk desktop 1440 px
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.kartu {
+    width: 100%;
+    min-width: 0;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* =====================================
+   RESPONSIVE TABLET
 ===================================== */
 
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     /* Navigasi tablet */
     nav {
         padding: 15px 5%;
@@ -1429,7 +1621,7 @@ footer p {
 ===================================== */
 
 
-@media (max-width: 650px) {
+@media (max-width: 480px) {
     /* Header dan navigasi HP */
     nav {
         flex-direction: column;
@@ -1562,12 +1754,79 @@ footer p {
         padding: 20px 5%;
     }
 }
+
 /* =====================================
-   15. RESPONSIVE HP KECIL
+   PENGATURAN DASAR DESKTOP
+   Berlaku untuk desktop 1440 px
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.kartu {
+    width: 100%;
+    min-width: 0;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+    .halaman-edukasi {
+        font-size: 14px;
+    }
+
+    .edukasi-hero {
+        min-height: 400px;
+        padding: 50px 6%;
+    }
+
+    .edukasi-hero h1 {
+        font-size: 38px;
+    }
+
+    .edukasi-pengertian,
+    .edukasi-bagian {
+        padding: 45px 6%;
+    }
+
+    .edukasi-pengertian-content {
+        flex-direction: column;
+    }
+
+    .edukasi-gambar-pengertian {
+        width: 100% !important;
+    }
+
+    .edukasi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+
+/* =====================================
+RESPONSIVE HP
 ===================================== */
 
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .menu {
         gap: 7px 11px;
     }
@@ -1715,7 +1974,39 @@ footer p {
     line-height: 1;
     margin-bottom: 15px;
 }
-/* RESPONSIVE TABLET DAN HP */
+
+/* =====================================
+   PENGATURAN DASAR DESKTOP
+   Berlaku untuk desktop 1440 px
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.kartu {
+    width: 100%;
+    min-width: 0;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* RESPONSIVE TABLET */
 
 @media (max-width: 768px) {
     .tips-hero {
@@ -1736,7 +2027,7 @@ footer p {
         height: 180px;
     }
 }
-/* RESPONSIVE HP KECIL */
+/* RESPONSIVE HP*/
 
 @media (max-width: 480px) {
     .tips-hero {
