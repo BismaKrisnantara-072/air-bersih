@@ -1895,30 +1895,43 @@ img {
    Berlaku untuk desktop 1440 px
 ===================================== */
 
-* {
-    box-sizing: border-box;
-}
+@media (max-width: 1440px) {
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+    /* Bagian pembuka Edukasi */
+    .edukasi-hero {
+        min-height: 636px;
+        padding: 80px 8%;
+    }
 
-.kumpulan-kartu {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 24px;
-}
+    /* Bagian pengertian air bersih */
+    .edukasi-pengertian {
+        padding: 80px 8%;
+    }
 
-.kartu {
-    width: 100%;
-    min-width: 0;
-}
+    .edukasi-pengertian-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
 
-.kartu img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+    .edukasi-gambar-pengertian,
+    .edukasi-teks-pengertian {
+        flex: 1 1 50%;
+        min-width: 0;
+    }
+
+    /* Bagian kartu edukasi */
+    .edukasi-bagian {
+        padding: 80px 8%;
+    }
+
+    .edukasi-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 22px;
+    }
+
 }
 
 /* RESPONSIVE TABLET */
@@ -2115,30 +2128,25 @@ RESPONSIVE HP
    Berlaku untuk desktop 1440 px
 ===================================== */
 
-* {
-    box-sizing: border-box;
-}
+@media (max-width: 1440px) {
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+    /* Bagian pembuka Tips */
+    .tips-hero {
+        min-height: 636px;
+        padding: 80px 8%;
+    }
 
-.kumpulan-kartu {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 24px;
-}
+    .tips-hero-isi {
+        max-width: 650px;
+    }
 
-.kartu {
-    width: 100%;
-    min-width: 0;
-}
+    /* Bagian kartu tips */
+    .tips-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
 
-.kartu img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
 }
 
 /* RESPONSIVE TABLET */
